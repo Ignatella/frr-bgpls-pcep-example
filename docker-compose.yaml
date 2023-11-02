@@ -1,0 +1,100 @@
+version: '3'
+
+services:
+  main:
+    image: quay.io/frrouting/frr:8.5.3
+    hostname: main
+    privileged: true
+    volumes: 
+      - ./vol/main:/etc/frr:rw
+    networks: 
+      main-start: 
+        ipv4_address: 172.18.0.2
+      main-end: 
+        ipv4_address: 172.18.1.2 
+  top:
+    image: quay.io/frrouting/frr:8.5.3
+    hostname: top
+    privileged: true
+    volumes: 
+      - ./vol/top:/etc/frr:rw
+    networks: 
+      top-start: 
+        ipv4_address: 172.18.2.2
+      top-end: 
+        ipv4_address: 172.18.3.2 
+  bottom:
+    image: quay.io/frrouting/frr:8.5.3
+    hostname: bottom 
+    privileged: true
+    volumes: 
+      - ./vol/bottom:/etc/frr:rw
+    networks: 
+      bottom-start: 
+        ipv4_address: 172.18.4.2
+      bottom-end: 
+        ipv4_address: 172.18.5.2 
+  start:
+    image: quay.io/frrouting/frr:8.5.3
+    hostname: start
+    privileged: true
+    volumes: 
+      - ./vol/start:/etc/frr:rw
+    networks: 
+      main-start: 
+        ipv4_address: 172.18.0.3
+      top-start: 
+        ipv4_address: 172.18.2.3 
+      bottom-start: 
+        ipv4_address: 172.18.4.3 
+  end: 
+    image: quay.io/frrouting/frr:8.5.3
+    hostname: end
+    privileged: true
+    volumes: 
+      - ./vol/end:/etc/frr:rw
+    networks: 
+      main-end: 
+        ipv4_address: 172.18.1.3
+      top-end: 
+        ipv4_address: 172.18.3.3 
+      bottom-end: 
+        ipv4_address: 172.18.5.3 
+
+networks:
+  main-start:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.0.0/29
+          gateway: 172.18.0.1
+  top-start:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.2.0/29
+          gateway: 172.18.2.1
+  bottom-start:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.4.0/29
+          gateway: 172.18.4.1
+  main-end:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.1.0/29
+          gateway: 172.18.1.1
+  top-end:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.3.0/29
+          gateway: 172.18.3.1
+  bottom-end:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.18.5.0/29
+          gateway: 172.18.5.1
