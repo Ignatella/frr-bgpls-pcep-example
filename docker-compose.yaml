@@ -27,6 +27,7 @@ services:
     image: quay.io/frrouting/frr:8.5.3
     hostname: bottom 
     privileged: true
+    user: 0:0
     volumes: 
       - ./vol/bottom:/etc/frr:rw
     networks: 
