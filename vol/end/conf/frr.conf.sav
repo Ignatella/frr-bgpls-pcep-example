@@ -1,0 +1,41 @@
+frr version 9.0.1_git
+frr defaults traditional
+hostname end
+log file /frr.log
+no ipv6 forwarding
+!
+interface eth1
+ ip router isis 1
+ mpls enable
+exit
+!
+interface eth2
+ ip router isis 1
+ mpls enable
+exit
+!
+interface eth3
+ ip router isis 1
+ mpls enable
+exit
+!
+interface lo
+ ip address 172.21.0.4/32
+ ip router isis 1
+ mpls enable
+exit
+!
+router isis 1
+ net 49.0001.4444.4444.4444.00
+ segment-routing on
+ segment-routing node-msd 8
+ segment-routing prefix 172.21.0.4/32 index 4 no-php-flag
+exit
+!
+segment-routing
+ traffic-eng
+  pcep
+  exit
+ exit
+exit
+!
