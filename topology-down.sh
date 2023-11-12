@@ -10,6 +10,7 @@ docker rm -f start
 docker rm -f top
 docker rm -f end
 docker rm -f bottom
+docker rm -f odl
 
 docker network rm mv-main-start
 docker network rm mv-top-start
@@ -17,3 +18,4 @@ docker network rm mv-bottom-start
 docker network rm mv-main-end
 docker network rm mv-top-end
 docker network rm mv-bottom-end
+docker network rm br-odl

@@ -4117,3 +4117,884 @@ ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_re
 2023/11/12 02:12:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
 2023/11/12 02:12:41 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.9b
 2023/11/12 02:12:41 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.9b
+2023/11/12 02:13:46 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f16fc433650, pending SET-CFG: 0
+2023/11/12 02:13:46 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 02:13:46 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f27883a1300, pending SET-CFG: 0
+2023/11/12 02:13:46 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 02:13:46 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f453a00b440, pending SET-CFG: 0
+2023/11/12 02:13:46 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 02:13:46 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 02:13:46 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f2dcac2f660, pending SET-CFG: 0
+2023/11/12 02:13:46 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f01902aa300, pending SET-CFG: 0
+2023/11/12 02:13:47 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 02:13:47 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=10, pid=3509410749
+2023/11/12 02:13:47 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 02:13:47 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 02:13:47 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 02:13:47 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth21ca927 in VRF 0
+2023/11/12 02:13:47 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=3509410749
+2023/11/12 02:13:47 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 02:13:48 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth6c7bf6f in VRF 0
+ZEBRA: Received signal 11 at 1699755228 (si_addr 0xc8, PC 0x560010768105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 02:14:16 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:16 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:48 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 02:14:48 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 02:14:48 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 02:14:48 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 02:14:48 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 02:14:48 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 02:14:48 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 02:14:48 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 02:14:48 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 02:14:48 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:48 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:48 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:48 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:48 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:48 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:49 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:49 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f964dfe7650, pending SET-CFG: 0
+2023/11/12 02:14:49 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:49 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f9f0bbf0130, pending SET-CFG: 0
+2023/11/12 02:14:49 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:49 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fc9b6377300, pending SET-CFG: 0
+2023/11/12 02:14:49 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:49 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f20fc3a1300, pending SET-CFG: 0
+2023/11/12 02:14:49 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 02:14:49 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 02:14:49 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:49 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f3b2ca8e670, pending SET-CFG: 0
+2023/11/12 12:17:19 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.b1
+2023/11/12 12:17:19 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.b1
+2023/11/12 12:17:19 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:17:19 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 434, packet type 0
+2023/11/12 12:17:19 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:17:19 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:17:19 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 12:17:19 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:17:19 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 12:17:20 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:17:20 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 440, packet type 0
+2023/11/12 12:17:20 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:17:20 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:17:20 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 12:17:20 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:17:20 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 12:17:20 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.b7
+2023/11/12 12:17:20 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.b7
+2023/11/12 12:17:53 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 12:17:53 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 12:17:53 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f4096c6f650, pending SET-CFG: 0
+2023/11/12 12:17:53 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fab86e22480, pending SET-CFG: 0
+2023/11/12 12:17:53 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f88f1148300, pending SET-CFG: 0
+2023/11/12 12:17:53 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f36e903c300, pending SET-CFG: 0
+2023/11/12 12:17:53 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:17:53 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:17:53 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fd0b20f2660, pending SET-CFG: 0
+2023/11/12 12:17:54 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 12:17:54 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth1c737bd in VRF 0
+2023/11/12 12:17:55 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth3c0df35 in VRF 0
+ZEBRA: Received signal 11 at 1699791475 (si_addr 0xc8, PC 0x55eaecdd0105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 12:18:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:55 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 12:18:55 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 12:18:55 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 12:18:55 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 12:18:55 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 12:18:55 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 12:18:55 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 12:18:55 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 12:18:55 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 12:18:55 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:55 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:55 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:55 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:55 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:55 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:55 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:55 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fea66a67650, pending SET-CFG: 0
+2023/11/12 12:18:55 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:55 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f2c6906c300, pending SET-CFG: 0
+2023/11/12 12:18:55 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:55 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f0fa31cb070, pending SET-CFG: 0
+2023/11/12 12:18:55 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:55 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f0f1c904300, pending SET-CFG: 0
+2023/11/12 12:18:55 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:18:55 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:18:55 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:55 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f684bc2e670, pending SET-CFG: 0
+2023/11/12 12:26:29 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.cd
+2023/11/12 12:26:29 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.cd
+2023/11/12 12:26:29 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:26:29 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 462, packet type 0
+2023/11/12 12:26:29 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:26:29 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:26:29 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 12:26:29 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:26:29 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 12:26:30 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:26:30 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 468, packet type 0
+2023/11/12 12:26:30 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:26:30 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:26:30 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 12:26:30 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:26:30 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 12:27:26 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 12:27:26 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 12:27:26 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f7666994650, pending SET-CFG: 0
+2023/11/12 12:27:26 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f6a8b5cf450, pending SET-CFG: 0
+2023/11/12 12:27:26 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f4e2687a300, pending SET-CFG: 0
+2023/11/12 12:27:26 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f6457820300, pending SET-CFG: 0
+2023/11/12 12:27:26 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:27:26 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:27:26 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f7644e4c660, pending SET-CFG: 0
+2023/11/12 12:27:27 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 12:27:27 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth07c835e in VRF 0
+2023/11/12 12:27:28 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth9b0e2db in VRF 0
+ZEBRA: Received signal 11 at 1699792048 (si_addr 0xc8, PC 0x55ec42143105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 12:27:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:27:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:28 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 12:28:28 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 12:28:28 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 12:28:28 STATIC: [X3G8F-PM93W] BE-client: mgmt_msg_read: got EOF/disconnect
+2023/11/12 12:28:28 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 12:28:28 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 12:28:28 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 12:28:28 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 12:28:28 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 12:28:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:29 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:29 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7ff1826da650, pending SET-CFG: 0
+2023/11/12 12:28:29 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:29 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f3c3d987110, pending SET-CFG: 0
+2023/11/12 12:28:29 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:29 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fb713d94300, pending SET-CFG: 0
+2023/11/12 12:28:29 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:29 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f97b482c300, pending SET-CFG: 0
+2023/11/12 12:28:29 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:28:29 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:28:29 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:29 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f074a183670, pending SET-CFG: 0
+2023/11/12 12:34:31 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.ef
+2023/11/12 12:34:31 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.ef
+2023/11/12 12:34:32 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:34:32 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 496, packet type 0
+2023/11/12 12:34:32 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 12:34:32 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:34:32 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 502, packet type 0
+2023/11/12 12:34:32 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 12:34:33 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.f5
+2023/11/12 12:34:33 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.f5
+2023/11/12 12:34:39 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 12:34:39 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 12:34:39 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:34:39 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f7895bb0650, pending SET-CFG: 0
+2023/11/12 12:34:39 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:34:39 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fb8f22704b0, pending SET-CFG: 0
+2023/11/12 12:34:39 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:34:39 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f370465a300, pending SET-CFG: 0
+2023/11/12 12:34:39 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:34:39 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fe2270f0300, pending SET-CFG: 0
+2023/11/12 12:34:39 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:34:39 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:34:39 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:34:39 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7ff610265660, pending SET-CFG: 0
+2023/11/12 12:34:40 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 12:34:40 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth691f5d2 in VRF 0
+2023/11/12 12:34:41 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethb448abf in VRF 0
+ZEBRA: Received signal 11 at 1699792481 (si_addr 0xc8, PC 0x5589deec9105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 12:35:09 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:09 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:41 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 12:35:41 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 12:35:41 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 12:35:41 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 12:35:41 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 12:35:41 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 12:35:41 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 12:35:41 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 12:35:41 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 12:35:41 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:41 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:41 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:41 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:41 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:41 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:42 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f771631b650, pending SET-CFG: 0
+2023/11/12 12:35:42 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f4ef731f070, pending SET-CFG: 0
+2023/11/12 12:35:42 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fe41cb7b300, pending SET-CFG: 0
+2023/11/12 12:35:42 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fcda61ed300, pending SET-CFG: 0
+2023/11/12 12:35:42 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:35:42 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:35:42 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f0499d24670, pending SET-CFG: 0
+2023/11/12 12:40:17 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.0b
+2023/11/12 12:40:17 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.0b
+2023/11/12 12:40:17 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:40:17 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 524, packet type 0
+2023/11/12 12:40:17 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:40:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:40:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 12:40:17 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:40:17 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 530, packet type 0
+2023/11/12 12:40:17 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:40:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:40:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 12:40:18 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.11
+2023/11/12 12:40:18 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.11
+2023/11/12 12:40:32 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 12:40:32 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 12:40:32 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f738c599650, pending SET-CFG: 0
+2023/11/12 12:40:32 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f949954a460, pending SET-CFG: 0
+2023/11/12 12:40:32 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f339455e300, pending SET-CFG: 0
+2023/11/12 12:40:32 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f21d0480300, pending SET-CFG: 0
+2023/11/12 12:40:32 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:40:32 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:40:32 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f0dd0a82660, pending SET-CFG: 0
+2023/11/12 12:40:33 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 12:40:33 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth87b5aea in VRF 0
+2023/11/12 12:40:34 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth8400852 in VRF 0
+ZEBRA: Received signal 11 at 1699792834 (si_addr 0xc8, PC 0x55fa0f42a105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 12:41:02 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:02 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:34 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 12:41:34 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 12:41:34 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 12:41:34 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 12:41:34 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 12:41:34 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 12:41:34 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 12:41:34 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 12:41:34 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 12:41:34 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:34 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:34 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:34 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:34 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:34 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:34 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:34 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f2165d11650, pending SET-CFG: 0
+2023/11/12 12:41:34 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:34 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f1d4d903080, pending SET-CFG: 0
+2023/11/12 12:41:34 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:34 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f8251592300, pending SET-CFG: 0
+2023/11/12 12:41:34 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:34 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f83e546b300, pending SET-CFG: 0
+2023/11/12 12:41:34 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:41:34 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:41:34 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:34 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fe16c01b670, pending SET-CFG: 0
+2023/11/12 13:07:35 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.27
+2023/11/12 13:07:35 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.27
+2023/11/12 13:07:35 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:07:35 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 552, packet type 0
+2023/11/12 13:07:35 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 13:07:35 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:07:35 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 558, packet type 0
+2023/11/12 13:07:35 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 13:07:36 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.2d
+2023/11/12 13:07:36 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.2d
+2023/11/12 13:07:43 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 13:07:43 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 13:07:43 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fa1652e6300, pending SET-CFG: 0
+2023/11/12 13:07:43 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fc7cb69c460, pending SET-CFG: 0
+2023/11/12 13:07:43 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f57a06e5650, pending SET-CFG: 0
+2023/11/12 13:07:43 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fa354cc2300, pending SET-CFG: 0
+2023/11/12 13:07:43 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:07:43 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:07:43 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fd65d03f660, pending SET-CFG: 0
+2023/11/12 13:07:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:07:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=10, pid=2539651304
+2023/11/12 13:07:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 13:07:44 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 13:07:44 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth31e5a6d in VRF 0
+2023/11/12 13:07:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:07:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=2539651304
+2023/11/12 13:07:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 13:07:45 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethf0960a8 in VRF 0
+ZEBRA: Received signal 11 at 1699794465 (si_addr 0xc8, PC 0x55c75696d105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 13:08:13 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:13 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:45 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 13:08:45 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 13:08:45 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 13:08:45 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 13:08:45 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 13:08:45 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 13:08:45 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 13:08:45 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 13:08:45 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 13:08:45 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:45 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:45 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:45 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:45 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:45 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:46 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:46 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fe68d51c650, pending SET-CFG: 0
+2023/11/12 13:08:46 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:46 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f5d02707300, pending SET-CFG: 0
+2023/11/12 13:08:46 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:46 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f1b3b557140, pending SET-CFG: 0
+2023/11/12 13:08:46 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:46 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fb932f5c300, pending SET-CFG: 0
+2023/11/12 13:08:46 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:08:46 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:08:46 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:46 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f63b7716670, pending SET-CFG: 0
+2023/11/12 13:21:54 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.46
+2023/11/12 13:21:54 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.46
+2023/11/12 13:21:54 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:21:54 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 583, packet type 0
+2023/11/12 13:21:54 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 13:21:54 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:21:54 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 589, packet type 0
+2023/11/12 13:21:54 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 13:21:55 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.4c
+2023/11/12 13:21:55 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.4c
+2023/11/12 13:24:56 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 13:24:56 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 13:24:56 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f784b1f1650, pending SET-CFG: 0
+2023/11/12 13:24:56 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f5e4e0404c0, pending SET-CFG: 0
+2023/11/12 13:24:56 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f1c7b6a0300, pending SET-CFG: 0
+2023/11/12 13:24:56 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fc0065fa300, pending SET-CFG: 0
+2023/11/12 13:24:56 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:24:56 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:24:56 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f79a9fa1660, pending SET-CFG: 0
+2023/11/12 13:24:57 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:24:57 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=10, pid=2695509518
+2023/11/12 13:24:57 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 13:24:57 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 13:24:57 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth8606f3a in VRF 0
+2023/11/12 13:24:57 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:24:57 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=2695509518
+2023/11/12 13:24:57 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 13:24:58 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethc1394f7 in VRF 0
+ZEBRA: Received signal 11 at 1699795498 (si_addr 0xc8, PC 0x563df3bc5105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 13:25:26 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:25:26 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:25:59 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 13:25:59 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 13:25:59 STATIC: [X3G8F-PM93W] BE-client: mgmt_msg_read: got EOF/disconnect
+2023/11/12 13:25:59 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 13:25:59 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 13:25:59 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 13:25:59 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 13:25:59 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:25:59 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:25:59 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:25:59 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:25:59 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:25:59 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:25:59 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 13:25:59 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 13:25:59 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:25:59 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f370d7c8650, pending SET-CFG: 0
+2023/11/12 13:25:59 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:25:59 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fccf060d0d0, pending SET-CFG: 0
+2023/11/12 13:25:59 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:25:59 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f6983a19300, pending SET-CFG: 0
+2023/11/12 13:25:59 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:25:59 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f8655753300, pending SET-CFG: 0
+2023/11/12 13:25:59 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:25:59 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:25:59 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:25:59 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f26bfdac670, pending SET-CFG: 0
+2023/11/12 13:30:17 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.68
+2023/11/12 13:30:17 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.68
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 13:30:17 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:30:17 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 623, packet type 0
+2023/11/12 13:30:17 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 13:30:18 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.6e
+2023/11/12 13:30:18 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.6e
+2023/11/12 13:30:24 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:24 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f35afe2f300, pending SET-CFG: 0
+2023/11/12 13:30:24 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 13:30:24 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 13:30:24 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:24 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fc27f1d9650, pending SET-CFG: 0
+2023/11/12 13:30:24 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:24 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f31ece98300, pending SET-CFG: 0
+2023/11/12 13:30:24 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:24 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f8315df0430, pending SET-CFG: 0
+2023/11/12 13:30:24 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:30:24 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:30:24 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 13:30:24 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f723def0660, pending SET-CFG: 0
+2023/11/12 13:30:25 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:30:25 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=10, pid=2793415767
+2023/11/12 13:30:25 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 13:30:26 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 13:30:26 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:30:26 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=2793415767
+2023/11/12 13:30:26 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 13:30:26 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth5e6f52f in VRF 0
+2023/11/12 13:30:27 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth78b5eda in VRF 0
+ZEBRA: Received signal 11 at 1699795827 (si_addr 0xc8, PC 0x55b1f6d64105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 13:30:54 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:30:54 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:30:57 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:30:57 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 654, packet type 0
+2023/11/12 13:30:57 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:30:58 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: No such device or address
+2023/11/12 13:30:58 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 13:30:58 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: No such device or address
+2023/11/12 13:30:58 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 13:31:58 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 13:31:58 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 13:31:58 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f3a80716650, pending SET-CFG: 0
+2023/11/12 13:31:58 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f30187ab300, pending SET-CFG: 0
+2023/11/12 13:31:58 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f6740d49450, pending SET-CFG: 0
+2023/11/12 13:31:58 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7feb42a33300, pending SET-CFG: 0
+2023/11/12 13:31:58 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:31:58 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:31:58 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f3102d80660, pending SET-CFG: 0
+2023/11/12 13:31:59 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:31:59 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=10, pid=3389300244
+2023/11/12 13:31:59 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 13:31:59 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 13:31:59 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:31:59 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=3389300244
+2023/11/12 13:31:59 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 13:31:59 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethb65db52 in VRF 0
+2023/11/12 13:32:00 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth608cadb in VRF 0
+ZEBRA: Received signal 11 at 1699795920 (si_addr 0xc8, PC 0x559bc33a3105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 13:32:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:32:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 13:33:01 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 13:33:01 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 13:33:01 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 13:33:01 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 13:33:01 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 13:33:01 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 13:33:01 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 13:33:01 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:02 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7ff173d04650, pending SET-CFG: 0
+2023/11/12 13:33:02 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f9008b96300, pending SET-CFG: 0
+2023/11/12 13:33:02 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f423307e080, pending SET-CFG: 0
+2023/11/12 13:33:02 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f0ee5776300, pending SET-CFG: 0
+2023/11/12 13:33:02 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:33:02 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:33:02 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f2a8e97e670, pending SET-CFG: 0
+2023/11/12 17:35:29 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.b2-00 seq 0x00000011 aged out
+2023/11/12 17:35:29 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.b4-00 seq 0x00000011 aged out
+2023/11/12 17:35:29 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.b6-00 seq 0x00000011 aged out
+2023/11/12 17:35:32 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.b2-00 seq 0x00000011 aged out
+2023/11/12 17:35:32 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.b4-00 seq 0x00000011 aged out
+2023/11/12 17:35:32 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.b6-00 seq 0x00000011 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.c5-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.c6-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.c7-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.c5-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.c6-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.c7-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.ca-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.cb-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.cc-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.ca-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.cb-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.cc-00 seq 0x00000001 aged out
+2023/11/12 17:58:44 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.ba-00
+2023/11/12 17:58:45 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.ba-00
+2023/11/12 17:58:46 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.ba-00
+2023/11/12 17:58:47 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.ba-00
+2023/11/12 17:59:42 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.cf-00 seq 0x00000001 aged out
+2023/11/12 17:59:42 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.d0-00 seq 0x00000001 aged out
+2023/11/12 17:59:42 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.d1-00 seq 0x00000001 aged out
+2023/11/12 17:59:43 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 4444.4444.4444.b8-00 seq 0x00000013 aged out
+2023/11/12 17:59:43 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 4444.4444.4444.ba-00 seq 0x00000013 aged out
+2023/11/12 17:59:43 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 4444.4444.4444.bc-00 seq 0x00000013 aged out
+2023/11/12 17:59:43 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 4444.4444.4444.b8-00 seq 0x00000013 aged out
+2023/11/12 17:59:43 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 4444.4444.4444.ba-00 seq 0x00000013 aged out
+2023/11/12 17:59:43 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 4444.4444.4444.bc-00 seq 0x00000013 aged out
+2023/11/12 17:59:45 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.cf-00 seq 0x00000001 aged out
+2023/11/12 17:59:45 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.d0-00 seq 0x00000001 aged out
+2023/11/12 17:59:45 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.d1-00 seq 0x00000001 aged out
+2023/11/12 18:03:43 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.d2
+2023/11/12 18:03:43 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.d2
+2023/11/12 18:03:43 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 18:03:43 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 691, packet type 0
+2023/11/12 18:03:43 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 18:03:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 18:03:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 18:03:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 18:03:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 18:03:44 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 18:03:44 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 697, packet type 0
+2023/11/12 18:03:44 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 18:03:44 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 18:03:44 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 18:03:44 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 18:03:44 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 18:03:44 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.da
+2023/11/12 18:03:44 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.da
+2023/11/12 18:03:53 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 18:03:53 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 18:03:53 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:53 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f21ec332650, pending SET-CFG: 0
+2023/11/12 18:03:53 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:53 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f4baaf86300, pending SET-CFG: 0
+2023/11/12 18:03:53 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:53 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f17b5ac1300, pending SET-CFG: 0
+2023/11/12 18:03:53 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:53 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fca2dcbe460, pending SET-CFG: 0
+2023/11/12 18:03:53 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 18:03:53 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 18:03:53 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:53 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f5c16df1660, pending SET-CFG: 0
+2023/11/12 18:03:55 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 18:03:55 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth4beca94 in VRF 0
+2023/11/12 18:03:56 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth6090217 in VRF 0
+ZEBRA: Received signal 11 at 1699812236 (si_addr 0xc8, PC 0x559a652bd105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 18:04:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:56 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 18:04:56 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 18:04:56 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 18:04:56 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 18:04:56 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 18:04:56 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 18:04:56 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 18:04:56 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 18:04:56 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 18:04:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:57 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:57 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fddc71a2650, pending SET-CFG: 0
+2023/11/12 18:04:57 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:57 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f35eb8fc100, pending SET-CFG: 0
+2023/11/12 18:04:57 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:57 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f2331444300, pending SET-CFG: 0
+2023/11/12 18:04:57 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:57 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7faac2c25300, pending SET-CFG: 0
+2023/11/12 18:04:57 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 18:04:57 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 18:04:57 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:57 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f84f383d670, pending SET-CFG: 0
+2023/11/12 21:52:40 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.f0
+2023/11/12 21:52:40 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.f0
+2023/11/12 21:52:40 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 21:52:40 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 753, packet type 0
+2023/11/12 21:52:40 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 21:52:40 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 21:52:40 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 759, packet type 0
+2023/11/12 21:52:40 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 21:52:41 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.f6
+2023/11/12 21:52:41 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.f6
+2023/11/12 21:52:50 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 21:52:50 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 21:52:50 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f4c6f6bb430, pending SET-CFG: 0
+2023/11/12 21:52:50 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f29b63fc650, pending SET-CFG: 0
+2023/11/12 21:52:50 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f13669ba300, pending SET-CFG: 0
+2023/11/12 21:52:50 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fb38065d300, pending SET-CFG: 0
+2023/11/12 21:52:50 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 21:52:50 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 21:52:50 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fe7220a6660, pending SET-CFG: 0
+2023/11/12 21:52:51 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 21:52:51 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=10, pid=3683313561
+2023/11/12 21:52:51 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 21:52:51 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 21:52:51 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth97f69fc in VRF 0
+2023/11/12 21:52:51 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 21:52:51 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=3683313561
+2023/11/12 21:52:51 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 21:52:52 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth8cedb1a in VRF 0
+ZEBRA: Received signal 11 at 1699825972 (si_addr 0xc8, PC 0x56457fa7c105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 21:53:20 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:20 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:52 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 21:53:52 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 21:53:52 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 21:53:52 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 21:53:52 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 21:53:52 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 21:53:52 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 21:53:52 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:52 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:52 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:52 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:52 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:52 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:52 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 21:53:52 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 21:53:53 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:53 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f11b6b2f650, pending SET-CFG: 0
+2023/11/12 21:53:53 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:53 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fa99ff42050, pending SET-CFG: 0
+2023/11/12 21:53:53 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:53 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fbb97827300, pending SET-CFG: 0
+2023/11/12 21:53:53 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:53 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f85545f7300, pending SET-CFG: 0
+2023/11/12 21:53:53 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 21:53:53 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 21:53:53 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:53 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f92158e4670, pending SET-CFG: 0
+2023/11/12 22:12:01 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.19
+2023/11/12 22:12:01 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.19
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 22:12:01 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 22:12:01 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 800, packet type 0
+2023/11/12 22:12:01 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 22:12:02 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.1f
+2023/11/12 22:12:02 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.1f
+2023/11/12 22:12:12 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 22:12:12 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 22:12:12 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fddc559f650, pending SET-CFG: 0
+2023/11/12 22:12:12 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f2849965440, pending SET-CFG: 0
+2023/11/12 22:12:12 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7ff75b790300, pending SET-CFG: 0
+2023/11/12 22:12:12 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fc2e4f85300, pending SET-CFG: 0
+2023/11/12 22:12:12 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:12:12 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:12:12 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f4e039b3660, pending SET-CFG: 0
+2023/11/12 22:13:20 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 22:13:20 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 22:13:20 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f6954fb5650, pending SET-CFG: 0
+2023/11/12 22:13:20 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f0e3af434b0, pending SET-CFG: 0
+2023/11/12 22:13:20 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f355db43300, pending SET-CFG: 0
+2023/11/12 22:13:20 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fbed9319300, pending SET-CFG: 0
+2023/11/12 22:13:20 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:13:20 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:13:20 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fd44a98f660, pending SET-CFG: 0
+2023/11/12 22:13:21 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 22:13:21 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=10, pid=3049065181
+2023/11/12 22:13:21 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 22:13:21 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 22:13:21 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethc3cde37 in VRF 0
+2023/11/12 22:13:21 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 22:13:21 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=3049065181
+2023/11/12 22:13:21 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 22:13:22 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth944c14d in VRF 0
+ZEBRA: Received signal 11 at 1699827202 (si_addr 0xc8, PC 0x55e4c9253105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 22:13:50 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:13:50 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:22 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 22:14:22 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 22:14:22 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 22:14:22 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 22:14:22 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 22:14:22 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 22:14:22 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 22:14:22 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 22:14:22 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:22 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:22 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:22 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:22 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:22 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:23 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:23 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fc5d8d4a0a0, pending SET-CFG: 0
+2023/11/12 22:14:23 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:23 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f5bfbf56300, pending SET-CFG: 0
+2023/11/12 22:14:23 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:23 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f897dae6300, pending SET-CFG: 0
+2023/11/12 22:14:23 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:23 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fd86aacb650, pending SET-CFG: 0
+2023/11/12 22:14:23 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:14:23 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:14:23 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:23 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fa3aa688670, pending SET-CFG: 0
+2023/11/12 22:55:43 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.70
+2023/11/12 22:55:43 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.70
+2023/11/12 22:55:43 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 22:55:43 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 881, packet type 0
+2023/11/12 22:55:43 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 22:55:43 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 22:55:43 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 887, packet type 0
+2023/11/12 22:55:43 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 22:55:44 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.76
+2023/11/12 22:55:44 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 4444.4444.4444.76
+2023/11/12 22:55:54 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 22:55:54 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 22:55:54 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fb27cb4a650, pending SET-CFG: 0
+2023/11/12 22:55:54 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f7e958de420, pending SET-CFG: 0
+2023/11/12 22:55:54 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f5c4bead300, pending SET-CFG: 0
+2023/11/12 22:55:54 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fc8b5d60300, pending SET-CFG: 0
+2023/11/12 22:55:54 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:55:54 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:55:54 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fb862c98660, pending SET-CFG: 0
+2023/11/12 22:55:56 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 22:55:56 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethf9d2792 in VRF 0
+ZEBRA: Received signal 11 at 1699829757 (si_addr 0xc8, PC 0x55be02af0105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 22:56:24 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:24 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:57 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 22:56:57 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 22:56:57 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 22:56:57 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 22:56:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:57 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 22:56:57 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 22:56:57 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 22:56:57 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 22:56:57 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:57 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f56c1535650, pending SET-CFG: 0
+2023/11/12 22:56:57 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:57 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fbff3187060, pending SET-CFG: 0
+2023/11/12 22:56:57 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:57 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fe0bceee300, pending SET-CFG: 0
+2023/11/12 22:56:57 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:57 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f1e54d84300, pending SET-CFG: 0
+2023/11/12 22:56:58 ZEBRA: [V98V0-MTWPF] client 50 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:56:58 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:56:58 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:58 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f9f74357670, pending SET-CFG: 0

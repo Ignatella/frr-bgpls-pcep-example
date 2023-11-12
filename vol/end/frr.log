@@ -4720,3 +4720,1464 @@ ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_re
 2023/11/12 02:12:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
 2023/11/12 02:12:41 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.9f-00
 2023/11/12 02:12:41 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.9f-00
+2023/11/12 02:13:46 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 02:13:46 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 02:13:46 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fe3e4d4a650, pending SET-CFG: 0
+2023/11/12 02:13:46 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 02:13:46 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fc3e47dc5e0, pending SET-CFG: 0
+2023/11/12 02:13:46 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f7e209e40c0, pending SET-CFG: 0
+2023/11/12 02:13:46 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fb896e79300, pending SET-CFG: 0
+2023/11/12 02:13:46 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f4bee6c2300, pending SET-CFG: 0
+2023/11/12 02:13:46 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 02:13:46 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 02:13:46 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 02:13:46 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:13:46 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f5bb6652660, pending SET-CFG: 0
+2023/11/12 02:13:47 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 02:13:47 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth4b0d0cb in VRF 0
+2023/11/12 02:13:47 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 02:13:47 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=4118663547
+2023/11/12 02:13:47 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 02:13:49 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth78f8e77 in VRF 0
+ZEBRA: Received signal 11 at 1699755229 (si_addr 0xc8, PC 0x56545777d105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 02:14:16 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:16 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:49 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 02:14:49 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 02:14:49 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 02:14:49 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 02:14:49 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 02:14:49 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 02:14:49 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 02:14:49 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 02:14:49 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 02:14:49 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:49 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:49 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:49 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:49 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:49 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 02:14:49 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 02:14:49 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 02:14:49 PATH: pcep: pceplib: event_loop: [1699755289-140179723742000] Finished timers_event_loop thread
+2023/11/12 02:14:50 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:50 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fa6b4697650, pending SET-CFG: 0
+2023/11/12 02:14:50 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:50 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f528db6e300, pending SET-CFG: 0
+2023/11/12 02:14:50 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:50 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f327f6422b0, pending SET-CFG: 0
+2023/11/12 02:14:50 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:50 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f4378969300, pending SET-CFG: 0
+2023/11/12 02:14:50 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:50 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f49a75ed0c0, pending SET-CFG: 0
+2023/11/12 02:14:50 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 02:14:50 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 02:14:50 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 02:14:50 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f35c41e8670, pending SET-CFG: 0
+2023/11/12 12:17:19 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.b1
+2023/11/12 12:17:19 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.b1
+2023/11/12 12:17:20 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:17:20 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 439, packet type 0
+2023/11/12 12:17:20 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:17:20 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:17:20 ISIS: [YTGQN-TJ0VF][EC 67108865] ISIS-Upd (1): Send L1 LSP on eth1 failed permanently
+2023/11/12 12:17:20 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:17:20 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 12:17:20 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:17:20 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 12:17:20 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:17:20 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 441, packet type 0
+2023/11/12 12:17:20 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:17:20 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:17:20 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 12:17:20 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:17:20 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 12:17:20 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:17:20 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 443, packet type 0
+2023/11/12 12:17:20 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:17:20 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 12:17:20 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 12:17:20 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 12:17:20 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 12:17:20 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.bb-00
+2023/11/12 12:17:20 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.bb-00
+2023/11/12 12:17:53 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 12:17:53 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 12:17:53 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 12:17:53 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f50b55d4650, pending SET-CFG: 0
+2023/11/12 12:17:53 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f220e4d6300, pending SET-CFG: 0
+2023/11/12 12:17:53 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f4030a52620, pending SET-CFG: 0
+2023/11/12 12:17:53 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f5a1048a300, pending SET-CFG: 0
+2023/11/12 12:17:53 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:17:53 PATH: [G6NKK-8C6DV] end_config: VTY:0x7efda2c710c0, pending SET-CFG: 0
+2023/11/12 12:17:53 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:17:53 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:17:53 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 12:17:53 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 12:17:53 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7efcc6eb0660, pending SET-CFG: 0
+2023/11/12 12:17:54 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 12:17:54 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth7177e9c in VRF 0
+2023/11/12 12:17:54 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 12:17:54 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=2364839447
+2023/11/12 12:17:54 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 12:17:56 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vetha64d724 in VRF 0
+ZEBRA: Received signal 11 at 1699791476 (si_addr 0xc8, PC 0x560d69bef105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 12:18:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:56 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 12:18:56 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 12:18:56 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 12:18:56 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 12:18:56 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 12:18:56 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 12:18:56 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 12:18:56 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 12:18:56 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 12:18:56 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 12:18:56 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 12:18:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:18:56 PATH: pcep: pceplib: event_loop: [1699791536-139627856673584] Finished timers_event_loop thread
+2023/11/12 12:18:57 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:57 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fa459cb6650, pending SET-CFG: 0
+2023/11/12 12:18:57 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:57 BGP: [G6NKK-8C6DV] end_config: VTY:0x7faea8c8b300, pending SET-CFG: 0
+2023/11/12 12:18:57 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:57 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fa8b89cd320, pending SET-CFG: 0
+2023/11/12 12:18:57 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:57 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fab1d582300, pending SET-CFG: 0
+2023/11/12 12:18:57 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:57 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f110c8d70c0, pending SET-CFG: 0
+2023/11/12 12:18:57 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:18:57 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:18:57 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:18:57 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f27162b2670, pending SET-CFG: 0
+2023/11/12 12:26:29 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.cd
+2023/11/12 12:26:29 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.cd
+2023/11/12 12:26:29 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:26:29 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 467, packet type 0
+2023/11/12 12:26:29 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:26:29 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:26:29 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 12:26:29 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:26:29 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 12:26:30 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:26:30 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 469, packet type 0
+2023/11/12 12:26:30 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:26:30 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:26:30 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 12:26:30 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:26:30 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 12:26:30 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:26:30 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 471, packet type 0
+2023/11/12 12:26:30 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:26:30 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 12:26:30 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 12:26:30 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 12:26:30 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 12:26:30 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.d5-00
+2023/11/12 12:26:30 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.d7-00
+2023/11/12 12:26:30 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.d5-00
+2023/11/12 12:26:30 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.d7-00
+2023/11/12 12:27:26 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 12:27:26 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 12:27:26 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 12:27:26 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fc9b18c6650, pending SET-CFG: 0
+2023/11/12 12:27:26 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fe6afd91300, pending SET-CFG: 0
+2023/11/12 12:27:26 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fc3b4442300, pending SET-CFG: 0
+2023/11/12 12:27:26 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f54848f7670, pending SET-CFG: 0
+2023/11/12 12:27:26 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 12:27:26 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f7b5e5840c0, pending SET-CFG: 0
+2023/11/12 12:27:26 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:27:26 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:27:26 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:27:26 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f6c64564660, pending SET-CFG: 0
+2023/11/12 12:27:27 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 12:27:27 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth94959d6 in VRF 0
+2023/11/12 12:27:27 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 12:27:27 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=3332608595
+2023/11/12 12:27:27 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 12:27:29 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth2ae89be in VRF 0
+ZEBRA: Received signal 11 at 1699792049 (si_addr 0xc8, PC 0x5559aea5e105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 12:27:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:27:56 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:29 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 12:28:29 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 12:28:29 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 12:28:29 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 12:28:29 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 12:28:29 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 12:28:29 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 12:28:29 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 12:28:29 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 12:28:29 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 12:28:29 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 12:28:29 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:29 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:29 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:29 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:29 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:29 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:28:30 PATH: pcep: pceplib: event_loop: [1699792110-140167874439984] Finished timers_event_loop thread
+2023/11/12 12:28:30 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:30 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fd812a62650, pending SET-CFG: 0
+2023/11/12 12:28:30 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:30 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fbf2b1ea300, pending SET-CFG: 0
+2023/11/12 12:28:30 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:30 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f9e766542c0, pending SET-CFG: 0
+2023/11/12 12:28:30 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:30 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f2738652300, pending SET-CFG: 0
+2023/11/12 12:28:30 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:28:30 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f74005ab0c0, pending SET-CFG: 0
+2023/11/12 12:28:30 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:28:30 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:28:30 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 12:28:30 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fd01f210670, pending SET-CFG: 0
+2023/11/12 12:34:31 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.ef
+2023/11/12 12:34:31 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.ef
+2023/11/12 12:34:32 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:34:32 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 501, packet type 0
+2023/11/12 12:34:32 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 12:34:32 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:34:32 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 503, packet type 0
+2023/11/12 12:34:32 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 12:34:32 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:34:32 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 505, packet type 0
+2023/11/12 12:34:32 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 12:34:32 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 12:34:32 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 12:34:33 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.f9-00
+2023/11/12 12:34:33 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.f9-00
+2023/11/12 12:34:39 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 12:34:39 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7efd5b1d6650, pending SET-CFG: 0
+2023/11/12 12:34:39 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 12:34:39 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f9ecdb82300, pending SET-CFG: 0
+2023/11/12 12:34:39 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 12:34:39 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 12:34:39 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 12:34:39 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 12:34:39 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 12:34:39 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f24e47c70c0, pending SET-CFG: 0
+2023/11/12 12:34:39 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 12:34:39 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fbfb3f75300, pending SET-CFG: 0
+2023/11/12 12:34:39 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 12:34:39 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7efd6d55d630, pending SET-CFG: 0
+2023/11/12 12:34:39 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:34:39 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:34:39 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 12:34:39 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f554cfb2660, pending SET-CFG: 0
+2023/11/12 12:34:40 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 12:34:40 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethe0e5629 in VRF 0
+2023/11/12 12:34:40 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 12:34:40 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=3863435795
+2023/11/12 12:34:40 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 12:34:42 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethb4a49fa in VRF 0
+ZEBRA: Received signal 11 at 1699792482 (si_addr 0xc8, PC 0x56120cef9105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 12:35:09 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:09 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:42 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 12:35:42 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 12:35:42 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 12:35:42 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 12:35:42 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 12:35:42 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 12:35:42 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 12:35:42 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 12:35:42 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 12:35:42 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 12:35:42 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 12:35:42 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:42 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:42 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:42 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:42 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:42 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:35:42 PATH: pcep: pceplib: event_loop: [1699792542-139796462803760] Finished timers_event_loop thread
+2023/11/12 12:35:42 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f765ff15300, pending SET-CFG: 0
+2023/11/12 12:35:42 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f0545d4f650, pending SET-CFG: 0
+2023/11/12 12:35:42 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f206c72f1e0, pending SET-CFG: 0
+2023/11/12 12:35:42 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fdbf8609310, pending SET-CFG: 0
+2023/11/12 12:35:42 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:42 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f89181430c0, pending SET-CFG: 0
+2023/11/12 12:35:43 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:35:43 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:35:43 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:35:43 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fcc9c600670, pending SET-CFG: 0
+2023/11/12 12:40:17 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.0b
+2023/11/12 12:40:17 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.0b
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:40:17 ISIS: [YTGQN-TJ0VF][EC 67108865] ISIS-Upd (1): Send L1 LSP on eth1 failed permanently
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:40:17 ISIS: [YTGQN-TJ0VF][EC 67108865] ISIS-Upd (1): Send L2 LSP on eth1 failed permanently
+2023/11/12 12:40:17 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:40:17 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 529, packet type 0
+2023/11/12 12:40:17 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:40:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 12:40:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 12:40:17 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:40:17 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 531, packet type 0
+2023/11/12 12:40:17 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:40:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 12:40:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 12:40:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 12:40:18 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 12:40:18 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 533, packet type 0
+2023/11/12 12:40:18 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 12:40:18 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 12:40:18 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 12:40:18 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 12:40:18 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 12:40:18 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.15-00
+2023/11/12 12:40:18 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.15-00
+2023/11/12 12:40:32 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 12:40:32 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 12:40:32 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 12:40:32 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 12:40:32 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f85917ad650, pending SET-CFG: 0
+2023/11/12 12:40:32 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fba39a86300, pending SET-CFG: 0
+2023/11/12 12:40:32 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f870cbce650, pending SET-CFG: 0
+2023/11/12 12:40:32 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f2b9d5780c0, pending SET-CFG: 0
+2023/11/12 12:40:32 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fed9b691300, pending SET-CFG: 0
+2023/11/12 12:40:32 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:40:32 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:40:32 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:40:32 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fe3504d8660, pending SET-CFG: 0
+2023/11/12 12:40:33 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 12:40:33 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth476b6f2 in VRF 0
+2023/11/12 12:40:33 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 12:40:33 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=13, pid=3951503617
+2023/11/12 12:40:33 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 12:40:35 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth8616c04 in VRF 0
+ZEBRA: Received signal 11 at 1699792835 (si_addr 0xc8, PC 0x560c84529105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 12:41:02 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:02 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:35 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 12:41:35 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 12:41:35 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 12:41:35 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 12:41:35 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 12:41:35 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 12:41:35 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 12:41:35 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 12:41:35 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 12:41:35 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 12:41:35 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 12:41:35 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:35 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:35 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:35 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:35 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:35 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 12:41:35 PATH: pcep: pceplib: event_loop: [1699792895-139825333971760] Finished timers_event_loop thread
+2023/11/12 12:41:36 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:36 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f80e3dc9650, pending SET-CFG: 0
+2023/11/12 12:41:36 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:36 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fe71d3f9300, pending SET-CFG: 0
+2023/11/12 12:41:36 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:36 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f8a6b57b310, pending SET-CFG: 0
+2023/11/12 12:41:36 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:36 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fe8990ed250, pending SET-CFG: 0
+2023/11/12 12:41:36 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:36 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f8f911960c0, pending SET-CFG: 0
+2023/11/12 12:41:36 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 12:41:36 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 12:41:36 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 12:41:36 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f9ebc99f670, pending SET-CFG: 0
+2023/11/12 12:48:27 BGP: [M59KS-A3ZXZ] bgp_update_receive: rcvd End-of-RIB for IPv4 Unicast from 172.21.0.2 in vrf default
+2023/11/12 13:07:35 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.27
+2023/11/12 13:07:35 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.27
+2023/11/12 13:07:35 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:07:35 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 557, packet type 0
+2023/11/12 13:07:35 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 13:07:35 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:07:35 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 559, packet type 0
+2023/11/12 13:07:35 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 13:07:35 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:07:35 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 561, packet type 0
+2023/11/12 13:07:35 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 13:07:35 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 13:07:35 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 13:07:36 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.31-00
+2023/11/12 13:07:36 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.31-00
+2023/11/12 13:07:43 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 13:07:43 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 13:07:43 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 13:07:43 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 13:07:43 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f3f2b5b7300, pending SET-CFG: 0
+2023/11/12 13:07:43 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 PATH: [G6NKK-8C6DV] end_config: VTY:0x7fcaf1f690c0, pending SET-CFG: 0
+2023/11/12 13:07:43 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fa2c41e7300, pending SET-CFG: 0
+2023/11/12 13:07:43 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f286690b650, pending SET-CFG: 0
+2023/11/12 13:07:43 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f80d66d8630, pending SET-CFG: 0
+2023/11/12 13:07:43 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:07:43 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:07:43 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:07:43 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f9afa652660, pending SET-CFG: 0
+2023/11/12 13:07:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:07:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=11, pid=3501404631
+2023/11/12 13:07:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 13:07:45 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 13:07:45 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth241a1be in VRF 0
+2023/11/12 13:07:45 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:07:45 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=14, pid=3501404631
+2023/11/12 13:07:45 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 13:07:46 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethfc9b6c3 in VRF 0
+ZEBRA: Received signal 11 at 1699794466 (si_addr 0xc8, PC 0x5562a610d105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 13:08:13 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:13 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:46 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 13:08:46 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 13:08:46 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 13:08:46 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 13:08:46 STATIC: [X3G8F-PM93W] BE-client: mgmt_msg_read: got EOF/disconnect
+2023/11/12 13:08:46 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 13:08:46 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 13:08:46 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 13:08:46 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 13:08:46 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 13:08:46 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 13:08:46 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 13:08:46 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 13:08:46 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:46 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:46 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:46 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:46 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:46 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:08:46 PATH: pcep: pceplib: event_loop: [1699794526-140509653482288] Finished timers_event_loop thread
+2023/11/12 13:08:47 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:47 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f09670c2650, pending SET-CFG: 0
+2023/11/12 13:08:47 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:47 PATH: [G6NKK-8C6DV] end_config: VTY:0x7fec135850c0, pending SET-CFG: 0
+2023/11/12 13:08:47 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:47 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f78d0b48300, pending SET-CFG: 0
+2023/11/12 13:08:47 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:47 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7ff0c6d024a0, pending SET-CFG: 0
+2023/11/12 13:08:47 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:08:47 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7ff2008f7310, pending SET-CFG: 0
+2023/11/12 13:08:47 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:08:47 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:08:47 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 13:08:47 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f7e1457d670, pending SET-CFG: 0
+2023/11/12 13:09:19 BGP: [M59KS-A3ZXZ] bgp_update_receive: rcvd End-of-RIB for IPv4 Unicast from 172.21.0.2 in vrf default
+2023/11/12 13:21:54 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.46
+2023/11/12 13:21:54 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.46
+2023/11/12 13:21:54 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:21:54 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 588, packet type 0
+2023/11/12 13:21:54 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 13:21:54 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:21:54 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 590, packet type 0
+2023/11/12 13:21:54 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 13:21:54 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 13:21:54 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 13:21:55 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.50-00
+2023/11/12 13:21:55 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.50-00
+2023/11/12 13:24:56 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 13:24:56 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 13:24:56 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 13:24:56 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fbf7cdb8640, pending SET-CFG: 0
+2023/11/12 13:24:56 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fdf9f0e2300, pending SET-CFG: 0
+2023/11/12 13:24:56 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 13:24:56 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f8a25f2f650, pending SET-CFG: 0
+2023/11/12 13:24:56 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fe2fa4ce300, pending SET-CFG: 0
+2023/11/12 13:24:56 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:56 PATH: [G6NKK-8C6DV] end_config: VTY:0x7fdb832ce0c0, pending SET-CFG: 0
+2023/11/12 13:24:57 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:24:57 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:24:57 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:24:57 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f46d985a660, pending SET-CFG: 0
+2023/11/12 13:24:58 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:24:58 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=11, pid=2569314584
+2023/11/12 13:24:58 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 13:24:58 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 13:24:58 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth045745b in VRF 0
+2023/11/12 13:24:58 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:24:58 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=14, pid=2569314584
+2023/11/12 13:24:58 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 13:24:59 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth3dffb0d in VRF 0
+ZEBRA: Received signal 11 at 1699795499 (si_addr 0xc8, PC 0x562f9f67a105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 13:25:27 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:25:27 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:26:00 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 13:26:00 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 13:26:00 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 13:26:00 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 13:26:00 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 13:26:00 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 13:26:00 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 13:26:00 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 13:26:00 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 13:26:00 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 13:26:00 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 13:26:00 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 13:26:00 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 13:26:00 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:26:00 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:26:00 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:26:00 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:26:00 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:26:00 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:26:00 PATH: pcep: pceplib: event_loop: [1699795560-140580809214768] Finished timers_event_loop thread
+2023/11/12 13:26:00 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:26:00 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f4bb7b75650, pending SET-CFG: 0
+2023/11/12 13:26:00 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:26:00 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fc5f46e6310, pending SET-CFG: 0
+2023/11/12 13:26:00 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:26:00 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fcc89ea3300, pending SET-CFG: 0
+2023/11/12 13:26:00 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:26:00 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f7dad91b430, pending SET-CFG: 0
+2023/11/12 13:26:00 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:26:00 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f1223e7f0c0, pending SET-CFG: 0
+2023/11/12 13:26:01 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:26:01 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:26:01 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:26:01 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f050a2c2670, pending SET-CFG: 0
+2023/11/12 13:26:32 BGP: [M59KS-A3ZXZ] bgp_update_receive: rcvd End-of-RIB for IPv4 Unicast from 172.21.0.2 in vrf default
+2023/11/12 13:30:17 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.68
+2023/11/12 13:30:17 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.68
+2023/11/12 13:30:17 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:30:17 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 622, packet type 0
+2023/11/12 13:30:17 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 13:30:17 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:30:17 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 624, packet type 0
+2023/11/12 13:30:17 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 13:30:17 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:30:17 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 626, packet type 0
+2023/11/12 13:30:17 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 13:30:17 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 13:30:17 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 13:30:25 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 13:30:25 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 13:30:25 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 13:30:25 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 13:30:25 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:25 PATH: [G6NKK-8C6DV] end_config: VTY:0x7fd1eb1f90c0, pending SET-CFG: 0
+2023/11/12 13:30:25 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:25 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f4a6b0805f0, pending SET-CFG: 0
+2023/11/12 13:30:25 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:25 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fa10fe42650, pending SET-CFG: 0
+2023/11/12 13:30:25 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:25 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f9a75c43300, pending SET-CFG: 0
+2023/11/12 13:30:25 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:25 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f578b7ec300, pending SET-CFG: 0
+2023/11/12 13:30:25 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:30:25 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:30:25 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:30:25 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f8036d81660, pending SET-CFG: 0
+2023/11/12 13:30:26 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:30:26 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=11, pid=3336709003
+2023/11/12 13:30:26 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 13:30:26 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 13:30:26 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth5c663b7 in VRF 0
+2023/11/12 13:30:26 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:30:26 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=14, pid=3336709003
+2023/11/12 13:30:26 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 13:30:27 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth4e7de41 in VRF 0
+ZEBRA: Received signal 11 at 1699795827 (si_addr 0xc8, PC 0x560ce633b105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 13:30:55 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:30:55 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:30:57 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 13:30:57 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 659, packet type 0
+2023/11/12 13:30:57 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 13:30:59 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: No such device or address
+2023/11/12 13:30:59 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 13:30:59 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: No such device or address
+2023/11/12 13:30:59 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 13:31:58 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 13:31:58 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 13:31:58 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 13:31:58 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 13:31:58 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f612d83f650, pending SET-CFG: 0
+2023/11/12 13:31:58 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f00448eb0c0, pending SET-CFG: 0
+2023/11/12 13:31:58 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fddfa6f0680, pending SET-CFG: 0
+2023/11/12 13:31:58 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fa861f21300, pending SET-CFG: 0
+2023/11/12 13:31:58 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f81eaa34300, pending SET-CFG: 0
+2023/11/12 13:31:58 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:31:58 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:31:58 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:31:58 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f56e8c8f660, pending SET-CFG: 0
+2023/11/12 13:31:59 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:31:59 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=11, pid=2162863930
+2023/11/12 13:31:59 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 13:32:00 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 13:32:00 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth67a64af in VRF 0
+2023/11/12 13:32:00 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 13:32:00 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=14, pid=2162863930
+2023/11/12 13:32:00 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 13:32:01 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth0f69ad8 in VRF 0
+ZEBRA: Received signal 11 at 1699795921 (si_addr 0xc8, PC 0x55fa0162f105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 13:32:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:32:28 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 13:33:01 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 13:33:01 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 13:33:01 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 13:33:01 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 13:33:01 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 13:33:01 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 13:33:01 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 13:33:01 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 13:33:01 PATH: pcep: pceplib: event_loop: [1699795981-139639160822576] Finished timers_event_loop thread
+2023/11/12 13:33:01 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 13:33:01 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 13:33:01 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 13:33:01 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:01 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 13:33:02 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f865a2d80c0, pending SET-CFG: 0
+2023/11/12 13:33:02 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fe09eb82300, pending SET-CFG: 0
+2023/11/12 13:33:02 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f24c63384c0, pending SET-CFG: 0
+2023/11/12 13:33:02 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fd65841a650, pending SET-CFG: 0
+2023/11/12 13:33:02 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f098aa46310, pending SET-CFG: 0
+2023/11/12 13:33:02 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 13:33:02 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 13:33:02 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 13:33:02 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fbd51457670, pending SET-CFG: 0
+2023/11/12 13:33:34 BGP: [M59KS-A3ZXZ] bgp_update_receive: rcvd End-of-RIB for IPv4 Unicast from 172.21.0.2 in vrf default
+2023/11/12 17:35:29 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.b2-00 seq 0x00000011 aged out
+2023/11/12 17:35:29 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.b4-00 seq 0x00000011 aged out
+2023/11/12 17:35:29 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.b6-00 seq 0x00000011 aged out
+2023/11/12 17:35:32 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.b2-00 seq 0x00000011 aged out
+2023/11/12 17:35:32 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.b4-00 seq 0x00000011 aged out
+2023/11/12 17:35:32 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.b6-00 seq 0x00000011 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.c5-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.c6-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.c7-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.c5-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.c6-00 seq 0x00000001 aged out
+2023/11/12 17:47:08 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.c7-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.ca-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.cb-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.cc-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.ca-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.cb-00 seq 0x00000001 aged out
+2023/11/12 17:54:02 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 2222.2222.2222.cc-00 seq 0x00000001 aged out
+2023/11/12 17:58:29 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 17:58:29 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 17:58:29 PATH: [G6NKK-8C6DV] end_config: VTY:0x7fc8836420c0, pending SET-CFG: 0
+2023/11/12 17:58:29 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 17:58:29 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fcba90eb300, pending SET-CFG: 0
+2023/11/12 17:58:29 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 17:58:29 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fa7eba3f650, pending SET-CFG: 0
+2023/11/12 17:58:29 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 17:58:29 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fd3649bf310, pending SET-CFG: 0
+2023/11/12 17:58:29 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 17:58:29 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f9d1850f220, pending SET-CFG: 0
+2023/11/12 17:58:29 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 17:58:29 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 17:58:29 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 17:58:29 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f8b0e357670, pending SET-CFG: 0
+2023/11/12 17:58:29 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:29 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=17, pid=3373640762
+2023/11/12 17:58:29 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2023/11/12 17:58:29 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:29 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=18, pid=3373640762
+2023/11/12 17:58:29 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:29 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=19, pid=3373640762
+2023/11/12 17:58:29 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:29 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=20, pid=3373640762
+2023/11/12 17:58:29 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:29 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=21, pid=3373640762
+2023/11/12 17:58:29 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:29 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=22, pid=3373640762
+2023/11/12 17:58:29 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15001
+2023/11/12 17:58:29 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15002
+2023/11/12 17:58:29 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15003
+2023/11/12 17:58:29 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15004
+2023/11/12 17:58:29 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15005
+2023/11/12 17:58:30 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:30 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=23, pid=3373640762
+2023/11/12 17:58:30 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:34 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:34 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=24, pid=3373640762
+2023/11/12 17:58:34 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:35 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:35 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=25, pid=3373640762
+2023/11/12 17:58:35 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:35 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:35 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=26, pid=3373640762
+2023/11/12 17:58:35 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:37 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:37 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=27, pid=3373640762
+2023/11/12 17:58:37 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:37 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:37 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=28, pid=3373640762
+2023/11/12 17:58:37 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:38 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:38 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=29, pid=3373640762
+2023/11/12 17:58:38 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:38 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:38 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=30, pid=3373640762
+2023/11/12 17:58:38 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:39 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:39 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=31, pid=3373640762
+2023/11/12 17:58:39 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=32, pid=3373640762
+2023/11/12 17:58:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=33, pid=3373640762
+2023/11/12 17:58:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=34, pid=3373640762
+2023/11/12 17:58:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:45 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:45 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=35, pid=3373640762
+2023/11/12 17:58:45 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:45 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:45 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=36, pid=3373640762
+2023/11/12 17:58:45 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:46 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:46 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=37, pid=3373640762
+2023/11/12 17:58:46 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:47 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:47 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=38, pid=3373640762
+2023/11/12 17:58:47 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:58 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:58 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=39, pid=3373640762
+2023/11/12 17:58:58 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:58:59 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:58:59 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=40, pid=3373640762
+2023/11/12 17:58:59 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:00 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:00 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=56, pid=3373640762
+2023/11/12 17:59:00 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:00 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=57, pid=3373640762
+2023/11/12 17:59:00 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:00 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=58, pid=3373640762
+2023/11/12 17:59:00 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:00 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=59, pid=3373640762
+2023/11/12 17:59:00 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 17:59:00 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 17:59:00 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:00 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 17:59:33 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:33 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=75, pid=3373640762
+2023/11/12 17:59:33 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:33 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=76, pid=3373640762
+2023/11/12 17:59:33 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:33 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=77, pid=3373640762
+2023/11/12 17:59:33 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:33 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=78, pid=3373640762
+2023/11/12 17:59:33 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 17:59:33 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 17:59:33 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:33 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 17:59:34 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:34 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=94, pid=3373640762
+2023/11/12 17:59:34 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:34 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=95, pid=3373640762
+2023/11/12 17:59:34 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:34 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=96, pid=3373640762
+2023/11/12 17:59:34 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:34 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=97, pid=3373640762
+2023/11/12 17:59:34 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 17:59:34 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 17:59:34 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:34 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 17:59:44 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 4444.4444.4444.b8-00 seq 0x00000013 aged out
+2023/11/12 17:59:44 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 4444.4444.4444.ba-00 seq 0x00000013 aged out
+2023/11/12 17:59:44 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 4444.4444.4444.bc-00 seq 0x00000013 aged out
+2023/11/12 17:59:44 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 4444.4444.4444.b8-00 seq 0x00000013 aged out
+2023/11/12 17:59:44 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 4444.4444.4444.ba-00 seq 0x00000013 aged out
+2023/11/12 17:59:44 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L2 LSP 4444.4444.4444.bc-00 seq 0x00000013 aged out
+2023/11/12 17:59:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=113, pid=3373640762
+2023/11/12 17:59:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=114, pid=3373640762
+2023/11/12 17:59:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=115, pid=3373640762
+2023/11/12 17:59:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=116, pid=3373640762
+2023/11/12 17:59:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 17:59:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 17:59:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 17:59:45 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.cf-00 seq 0x00000001 aged out
+2023/11/12 17:59:45 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.d0-00 seq 0x00000001 aged out
+2023/11/12 17:59:45 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:45 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=132, pid=3373640762
+2023/11/12 17:59:45 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:45 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=133, pid=3373640762
+2023/11/12 17:59:45 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:45 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=134, pid=3373640762
+2023/11/12 17:59:45 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:45 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=135, pid=3373640762
+2023/11/12 17:59:45 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 17:59:45 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 17:59:45 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:45 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 17:59:46 ISIS: [X12R5-D6A2B] ISIS-Upd (1): L1 LSP 2222.2222.2222.d1-00 seq 0x00000001 aged out
+2023/11/12 17:59:46 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:46 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=151, pid=3373640762
+2023/11/12 17:59:46 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:46 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=152, pid=3373640762
+2023/11/12 17:59:46 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:46 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=153, pid=3373640762
+2023/11/12 17:59:46 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:46 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=154, pid=3373640762
+2023/11/12 17:59:46 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 17:59:46 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 17:59:46 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:46 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 17:59:50 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:50 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=170, pid=3373640762
+2023/11/12 17:59:50 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:50 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=171, pid=3373640762
+2023/11/12 17:59:50 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:50 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=172, pid=3373640762
+2023/11/12 17:59:50 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:50 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=173, pid=3373640762
+2023/11/12 17:59:50 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 17:59:50 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 17:59:50 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:50 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 17:59:51 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:51 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=189, pid=3373640762
+2023/11/12 17:59:51 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:51 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=190, pid=3373640762
+2023/11/12 17:59:51 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:51 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=191, pid=3373640762
+2023/11/12 17:59:51 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:51 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=192, pid=3373640762
+2023/11/12 17:59:51 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 17:59:51 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 17:59:51 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:51 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 17:59:52 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:52 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=208, pid=3373640762
+2023/11/12 17:59:52 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:52 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=209, pid=3373640762
+2023/11/12 17:59:52 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:52 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=210, pid=3373640762
+2023/11/12 17:59:52 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 17:59:52 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=211, pid=3373640762
+2023/11/12 17:59:52 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 17:59:52 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 17:59:52 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 17:59:52 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 18:00:03 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:03 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=229, pid=3373640762
+2023/11/12 18:00:03 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:03 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=230, pid=3373640762
+2023/11/12 18:00:03 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:03 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=231, pid=3373640762
+2023/11/12 18:00:03 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:03 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=232, pid=3373640762
+2023/11/12 18:00:03 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:03 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=233, pid=3373640762
+2023/11/12 18:00:03 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 18:00:03 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16002
+2023/11/12 18:00:03 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 18:00:03 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 18:00:03 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 18:00:04 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:04 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=254, pid=3373640762
+2023/11/12 18:00:04 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:04 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=255, pid=3373640762
+2023/11/12 18:00:04 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:04 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=256, pid=3373640762
+2023/11/12 18:00:04 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:04 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=257, pid=3373640762
+2023/11/12 18:00:04 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:00:04 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=258, pid=3373640762
+2023/11/12 18:00:04 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 18:00:04 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16002
+2023/11/12 18:00:04 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 18:00:04 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 18:00:04 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 18:03:43 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.d2
+2023/11/12 18:03:43 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.d2
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=277, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=278, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=279, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=280, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=281, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16001
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16002
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 18:03:43 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 18:03:43 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 730, packet type 0
+2023/11/12 18:03:43 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 18:03:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: No such device or address
+2023/11/12 18:03:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 18:03:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: No such device or address
+2023/11/12 18:03:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=285, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=286, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=287, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=288, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=289, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=290, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=291, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15002
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16002
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15001
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15003
+2023/11/12 18:03:43 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:43 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=292, pid=3373640762
+2023/11/12 18:03:43 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16003
+2023/11/12 18:03:44 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 18:03:44 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 731, packet type 0
+2023/11/12 18:03:44 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 18:03:44 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: No such device or address
+2023/11/12 18:03:44 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 18:03:44 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: No such device or address
+2023/11/12 18:03:44 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 18:03:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=296, pid=3373640762
+2023/11/12 18:03:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=297, pid=3373640762
+2023/11/12 18:03:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=298, pid=3373640762
+2023/11/12 18:03:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=299, pid=3373640762
+2023/11/12 18:03:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=300, pid=3373640762
+2023/11/12 18:03:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16005
+2023/11/12 18:03:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16002
+2023/11/12 18:03:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 18:03:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15000
+2023/11/12 18:03:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 15003
+2023/11/12 18:03:44 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 18:03:44 ISIS: [YTGQN-TJ0VF][EC 67108865] ISIS-Upd (1): Send L1 LSP on eth1 failed permanently
+2023/11/12 18:03:44 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 18:03:44 ISIS: [YTGQN-TJ0VF][EC 67108865] ISIS-Upd (1): Send L2 LSP on eth1 failed permanently
+2023/11/12 18:03:44 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 18:03:44 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 727, packet type 0
+2023/11/12 18:03:44 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 18:03:44 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: No such device or address
+2023/11/12 18:03:44 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 18:03:44 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: No such device or address
+2023/11/12 18:03:44 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 18:03:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=304, pid=3373640762
+2023/11/12 18:03:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 18:03:44 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.d7-00
+2023/11/12 18:03:44 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.d7-00
+2023/11/12 18:03:44 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:44 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=312, pid=3373640762
+2023/11/12 18:03:44 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 18:03:54 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 18:03:54 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 18:03:54 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 18:03:54 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:54 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f2fd20f1650, pending SET-CFG: 0
+2023/11/12 18:03:54 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:54 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f68f3b1a5f0, pending SET-CFG: 0
+2023/11/12 18:03:54 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:54 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fc452fc7300, pending SET-CFG: 0
+2023/11/12 18:03:54 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:54 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f48f272c0c0, pending SET-CFG: 0
+2023/11/12 18:03:54 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:54 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7ff9b01eb300, pending SET-CFG: 0
+2023/11/12 18:03:54 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 18:03:54 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 18:03:54 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:03:54 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f514972b660, pending SET-CFG: 0
+2023/11/12 18:03:55 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:55 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=11, pid=3871560688
+2023/11/12 18:03:55 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 18:03:55 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 18:03:55 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth25ea156 in VRF 0
+2023/11/12 18:03:55 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 18:03:55 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=14, pid=3871560688
+2023/11/12 18:03:55 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 18:03:56 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth7e40d84 in VRF 0
+ZEBRA: Received signal 11 at 1699812236 (si_addr 0xc8, PC 0x56470bf30105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 18:04:24 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:24 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:57 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 18:04:57 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 18:04:57 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 18:04:57 STATIC: [X3G8F-PM93W] BE-client: mgmt_msg_read: got EOF/disconnect
+2023/11/12 18:04:57 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 18:04:57 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 18:04:57 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 18:04:57 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 18:04:57 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 18:04:57 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 18:04:57 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 18:04:57 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 18:04:57 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 18:04:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:57 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 18:04:57 PATH: pcep: pceplib: event_loop: [1699812297-139951315872560] Finished timers_event_loop thread
+2023/11/12 18:04:58 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:58 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f7e4109b650, pending SET-CFG: 0
+2023/11/12 18:04:58 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:58 PATH: [G6NKK-8C6DV] end_config: VTY:0x7efd1bf9f0c0, pending SET-CFG: 0
+2023/11/12 18:04:58 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:58 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7faa9aa98310, pending SET-CFG: 0
+2023/11/12 18:04:58 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:58 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f9cdac80460, pending SET-CFG: 0
+2023/11/12 18:04:58 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:58 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f11db8e8300, pending SET-CFG: 0
+2023/11/12 18:04:58 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 18:04:58 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 18:04:58 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 18:04:58 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f16964d9670, pending SET-CFG: 0
+2023/11/12 18:05:29 BGP: [M59KS-A3ZXZ] bgp_update_receive: rcvd End-of-RIB for IPv4 Unicast from 172.21.0.2 in vrf default
+2023/11/12 21:52:40 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.f0
+2023/11/12 21:52:40 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.f0
+2023/11/12 21:52:40 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 21:52:40 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 758, packet type 0
+2023/11/12 21:52:40 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 21:52:40 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 21:52:40 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 760, packet type 0
+2023/11/12 21:52:40 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 21:52:40 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 21:52:40 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 762, packet type 0
+2023/11/12 21:52:40 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 21:52:40 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 21:52:40 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 21:52:41 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L1 4444.4444.4444.fa-00
+2023/11/12 21:52:41 ISIS: [XVMQ9-2GBBQ] ISIS-SPF: No LSP found from root to L2 4444.4444.4444.fa-00
+2023/11/12 21:52:50 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 21:52:50 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 21:52:50 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 21:52:50 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fd5911c8650, pending SET-CFG: 0
+2023/11/12 21:52:50 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fb60195b660, pending SET-CFG: 0
+2023/11/12 21:52:50 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 21:52:50 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f5654ede300, pending SET-CFG: 0
+2023/11/12 21:52:50 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f1b73d100c0, pending SET-CFG: 0
+2023/11/12 21:52:50 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:52:50 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7fe9a7c61300, pending SET-CFG: 0
+2023/11/12 21:52:50 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 21:52:50 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 21:52:50 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 21:52:50 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f80f43e2660, pending SET-CFG: 0
+2023/11/12 21:52:51 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 21:52:51 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=11, pid=3826167517
+2023/11/12 21:52:51 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 21:52:51 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 21:52:51 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth73cebc8 in VRF 0
+2023/11/12 21:52:51 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 21:52:51 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=14, pid=3826167517
+2023/11/12 21:52:51 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 21:52:53 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth6484b9e in VRF 0
+ZEBRA: Received signal 11 at 1699825973 (si_addr 0xc8, PC 0x55f38c369105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 21:53:20 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:20 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:53 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 21:53:53 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 21:53:53 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 21:53:53 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 21:53:53 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 21:53:53 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 21:53:53 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 21:53:53 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 21:53:53 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 21:53:53 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 21:53:53 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 21:53:53 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 21:53:53 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 21:53:53 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:53 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:53 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:53 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:53 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:53 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 21:53:54 PATH: pcep: pceplib: event_loop: [1699826034-139755917814576] Finished timers_event_loop thread
+2023/11/12 21:53:54 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:54 BGP: [G6NKK-8C6DV] end_config: VTY:0x7fa898edb300, pending SET-CFG: 0
+2023/11/12 21:53:54 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:54 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f02dcd3d410, pending SET-CFG: 0
+2023/11/12 21:53:54 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:54 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fc370b00650, pending SET-CFG: 0
+2023/11/12 21:53:54 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:54 PATH: [G6NKK-8C6DV] end_config: VTY:0x7fdc1d0e70c0, pending SET-CFG: 0
+2023/11/12 21:53:54 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:54 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f167ac87310, pending SET-CFG: 0
+2023/11/12 21:53:54 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 21:53:54 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 21:53:54 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 21:53:54 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f91b9777670, pending SET-CFG: 0
+2023/11/12 21:54:26 BGP: [M59KS-A3ZXZ] bgp_update_receive: rcvd End-of-RIB for IPv4 Unicast from 172.21.0.2 in vrf default
+2023/11/12 22:12:01 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.19
+2023/11/12 22:12:01 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.19
+2023/11/12 22:12:01 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 22:12:01 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 799, packet type 0
+2023/11/12 22:12:01 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 22:12:01 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 22:12:01 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 801, packet type 0
+2023/11/12 22:12:01 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 22:12:01 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 22:12:01 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 803, packet type 0
+2023/11/12 22:12:01 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 22:12:01 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 22:12:01 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 22:12:12 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 22:12:12 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 22:12:12 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 22:12:12 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 22:12:12 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f8c8ab62300, pending SET-CFG: 0
+2023/11/12 22:12:12 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7febbda20300, pending SET-CFG: 0
+2023/11/12 22:12:12 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f0835a380c0, pending SET-CFG: 0
+2023/11/12 22:12:12 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f9595a0f700, pending SET-CFG: 0
+2023/11/12 22:12:12 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f9920b9e650, pending SET-CFG: 0
+2023/11/12 22:12:12 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:12:12 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:12:12 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:12:12 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fd6b553b660, pending SET-CFG: 0
+2023/11/12 22:12:13 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 22:12:13 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=11, pid=3369458225
+2023/11/12 22:12:13 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 22:13:20 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 22:13:20 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 22:13:20 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 22:13:20 PATH: [NN4XW-E4M3V] IPv4 Router Id updated for VRF 0: 172.21.0.4
+2023/11/12 22:13:20 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f9a659e2300, pending SET-CFG: 0
+2023/11/12 22:13:20 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7ff5d3448600, pending SET-CFG: 0
+2023/11/12 22:13:20 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f8d521ac650, pending SET-CFG: 0
+2023/11/12 22:13:20 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f329d21f0c0, pending SET-CFG: 0
+2023/11/12 22:13:20 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 BGP: [G6NKK-8C6DV] end_config: VTY:0x7ff858ec2300, pending SET-CFG: 0
+2023/11/12 22:13:20 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:13:20 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:13:20 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:13:20 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f53a2838660, pending SET-CFG: 0
+2023/11/12 22:13:22 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 22:13:22 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=11, pid=3145905736
+2023/11/12 22:13:22 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 22:13:22 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 22:13:22 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth0f73320 in VRF 0
+2023/11/12 22:13:22 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 22:13:22 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=14, pid=3145905736
+2023/11/12 22:13:22 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 22:13:23 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth01e1be2 in VRF 0
+ZEBRA: Received signal 11 at 1699827203 (si_addr 0xc8, PC 0x558aecdff105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 22:13:50 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:13:50 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:23 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 22:14:23 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 22:14:23 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 22:14:23 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 22:14:23 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 22:14:23 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 22:14:23 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 22:14:23 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 22:14:23 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 22:14:23 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 22:14:23 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 22:14:23 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 22:14:23 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 22:14:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:23 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:14:23 PATH: pcep: pceplib: event_loop: [1699827263-139855395232560] Finished timers_event_loop thread
+2023/11/12 22:14:24 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:24 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7fb25b2a2650, pending SET-CFG: 0
+2023/11/12 22:14:24 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:24 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f526f80f310, pending SET-CFG: 0
+2023/11/12 22:14:24 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:24 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7fba7ae15390, pending SET-CFG: 0
+2023/11/12 22:14:24 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:24 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f79e02570c0, pending SET-CFG: 0
+2023/11/12 22:14:24 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:14:24 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f69fd3c6300, pending SET-CFG: 0
+2023/11/12 22:14:24 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:14:24 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:14:24 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:01
+2023/11/12 22:14:24 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f84c5656670, pending SET-CFG: 0
+2023/11/12 22:14:56 BGP: [M59KS-A3ZXZ] bgp_update_receive: rcvd End-of-RIB for IPv4 Unicast from 172.21.0.2 in vrf default
+2023/11/12 22:53:25 PATH: [XHQ08-NHTQX] new pcc_idx (0)
+2023/11/12 22:53:25 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:53:26 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:53:26 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:53:28 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:53:28 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:53:34 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:53:34 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:53:35 PATH: [ZT69M-EDPC8] multi-pce: calculate all : i (0) is_best (0) previous_best (0)   
+2023/11/12 22:53:35 PATH: [VG6PJ-E1ERD] multi-pce: calculate data : sb (-1) sp (-1) oc (-1) b (-1)  
+2023/11/12 22:53:46 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:53:46 PATH: [RCHMJ-86GPX][EC 285212680] missing IPv6 PCC address, IPv6 candidate paths will be ignored
+2023/11/12 22:53:47 PATH: [ZT69M-EDPC8] multi-pce: calculate all : i (0) is_best (0) previous_best (0)   
+2023/11/12 22:53:47 PATH: [VG6PJ-E1ERD] multi-pce: calculate data : sb (-1) sp (-1) oc (0) b (0)  
+2023/11/12 22:53:47 PATH: [RHH05-AQA87] multi-pce: best pce (1) 
+2023/11/12 22:53:47 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:55:43 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.70
+2023/11/12 22:55:43 ISIS: [XQ4FP-5NHW3] ISIS-SPF: No LSP found for 2222.2222.2222.70
+2023/11/12 22:55:43 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth1, fd 16, bytesread -1, recvfrom(): Network is down
+2023/11/12 22:55:43 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 886, packet type 0
+2023/11/12 22:55:43 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth1 failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth1: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth1 failed
+2023/11/12 22:55:43 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth2, fd 17, bytesread -1, recvfrom(): Network is down
+2023/11/12 22:55:43 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 888, packet type 0
+2023/11/12 22:55:43 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth2 failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth2: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth2 failed
+2023/11/12 22:55:43 ISIS: [M7QDW-48DP2] isis_recv_pdu_bcast: ifname eth3, fd 18, bytesread -1, recvfrom(): Network is down
+2023/11/12 22:55:43 ISIS: [P42KE-G0CDM] packet is received on multiple interfaces: socket interface 0, circuit interface 890, packet type 0
+2023/11/12 22:55:43 ISIS: [PT8ND-1Y17N] isis_recv_pdu_bcast: recvfrom() failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L1 IIH on eth3 failed
+2023/11/12 22:55:43 ISIS: [TBBSQ-HBJMF] IS-IS pfpacket: could not transmit packet on eth3: Network is down
+2023/11/12 22:55:43 ISIS: [G7ZA5-AT06A][EC 67108865] ISIS-Adj (1): Send L2 IIH on eth3 failed
+2023/11/12 22:55:54 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth1/input for writing: No such file or directory(2)
+2023/11/12 22:55:54 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth2/input for writing: No such file or directory(2)
+2023/11/12 22:55:54 ZEBRA: [RJX7P-SZSYH][EC 100663299] netlink_put_intf_netconfig: Unable to open /proc/sys/net/mpls/conf/eth3/input for writing: No such file or directory(2)
+2023/11/12 22:55:54 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f52c45b8650, pending SET-CFG: 0
+2023/11/12 22:55:54 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f3db738a690, pending SET-CFG: 0
+2023/11/12 22:55:54 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f22ee325300, pending SET-CFG: 0
+2023/11/12 22:55:54 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f5dcd815300, pending SET-CFG: 0
+2023/11/12 22:55:54 PATH: [XHQ08-NHTQX] new pcc_idx (0)
+2023/11/12 22:55:54 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:55:54 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f47314380c0, pending SET-CFG: 0
+2023/11/12 22:55:54 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:55:54 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:55:54 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:55:54 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7f830c467660, pending SET-CFG: 0
+2023/11/12 22:55:55 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:55:55 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:55:55 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 22:55:55 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=11, pid=2212712501
+2023/11/12 22:55:55 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 22:55:56 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF eth0 in VRF 0
+2023/11/12 22:55:56 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF vethfcfc8d4 in VRF 0
+2023/11/12 22:55:56 ZEBRA: [HSYZM-HV7HF] Extended Error: Label >= configured maximum in platform_labels
+2023/11/12 22:55:56 ZEBRA: [WVJCK-PPMGD][EC 4043309093] netlink-dp (NS 0) error: Invalid argument, type=RTM_NEWROUTE(24), seq=14, pid=2212712501
+2023/11/12 22:55:56 ZEBRA: [RYJ61-Q2T1D][EC 4043309108] LSP Install Failure: in-label 16004
+2023/11/12 22:55:57 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:55:57 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:55:58 BGP: [VCGF0-X62M1][EC 100663301] INTERFACE_STATE: Cannot find IF veth9ddec4a in VRF 0
+ZEBRA: Received signal 11 at 1699829758 (si_addr 0xc8, PC 0x557073a9c105); aborting...
+ZEBRA: in thread kernel_read scheduled from zebra/kernel_netlink.c:496 kernel_read()
+2023/11/12 22:55:58 BGP: [YTHK0-FSPPJ][EC 33554500] sendmsg_nexthop: zclient_send_message() failed
+2023/11/12 22:56:03 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:56:03 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:56:04 PATH: [ZT69M-EDPC8] multi-pce: calculate all : i (0) is_best (0) previous_best (0)   
+2023/11/12 22:56:04 PATH: [VG6PJ-E1ERD] multi-pce: calculate data : sb (-1) sp (-1) oc (-1) b (-1)  
+2023/11/12 22:56:15 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:56:15 PATH: [RCHMJ-86GPX][EC 285212680] missing IPv6 PCC address, IPv6 candidate paths will be ignored
+2023/11/12 22:56:15 PATH: pcep: pceplib: socket_comm_session_connect_tcp: TCP connect failed on socket_fd [11].
+2023/11/12 22:56:15 PATH: pcep: pceplib: create_pcep_session_post_setup: Cannot establish TCP socket.
+2023/11/12 22:56:15 PATH: [GMFMW-Y911K][EC 285212678] failed to connect to PCE 172.20.0.3:4189 from 172.20.0.4:4189
+2023/11/12 22:56:24 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:24 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:34 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:56:34 PATH: [RCHMJ-86GPX][EC 285212680] missing IPv6 PCC address, IPv6 candidate paths will be ignored
+2023/11/12 22:56:34 PATH: pcep: pceplib: socket_comm_session_connect_tcp: TCP connect failed on socket_fd [11].
+2023/11/12 22:56:34 PATH: pcep: pceplib: create_pcep_session_post_setup: Cannot establish TCP socket.
+2023/11/12 22:56:34 PATH: [GMFMW-Y911K][EC 285212678] failed to connect to PCE 172.20.0.3:4189 from 172.20.0.4:4189
+2023/11/12 22:56:58 PATH: [TCME6-224AD] Terminating on signal
+2023/11/12 22:56:58 PATH: [PKKEV-3K0XV] Unregisterfrom opaque,etc 
+2023/11/12 22:56:58 STATIC: [MRN6F-AYZC4] Terminating on signal
+2023/11/12 22:56:58 MGMTD: [X3G8F-PM93W] BE-adapter: mgmt_msg_read: got EOF/disconnect
+2023/11/12 22:56:58 BGP: [ZW1GY-R46JE] Terminating on signal
+2023/11/12 22:56:58 MGMTD: [J2RAS-MZ95C] Terminating on signal
+2023/11/12 22:56:58 ISIS: [ZW9EW-V8QX8] Terminating on signal SIGINT
+2023/11/12 22:56:58 MGMTD: [HCG14-1RJ6N] VRF Disable: default(0)
+2023/11/12 22:56:58 MGMTD: [VC4E4-EWCF0] VRF Deletion: default(4294967295)
+2023/11/12 22:56:58 ISIS: [RYH2B-MAP0Z][EC 100663302] Can't write to zclient sock
+2023/11/12 22:56:58 ISIS: [Q4Q1B-6QKNV] isis_zebra_release_label_range: error releasing label range!
+2023/11/12 22:56:58 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:58 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:58 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:58 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:58 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:58 ISIS: [WDVAD-TY6HY] ISIS-LFA: failed to unregister RLFA with LDP
+2023/11/12 22:56:58 PATH: pcep: pceplib: event_loop: [1699829818-139943779806000] Finished timers_event_loop thread
+2023/11/12 22:56:59 MGMTD: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:59 MGMTD: [G6NKK-8C6DV] end_config: VTY:0x7f9bd66a9650, pending SET-CFG: 0
+2023/11/12 22:56:59 STATIC: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:59 STATIC: [G6NKK-8C6DV] end_config: VTY:0x7f5cd81d3310, pending SET-CFG: 0
+2023/11/12 22:56:59 BGP: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:59 BGP: [G6NKK-8C6DV] end_config: VTY:0x7f8b98f9c300, pending SET-CFG: 0
+2023/11/12 22:56:59 ZEBRA: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:59 ZEBRA: [G6NKK-8C6DV] end_config: VTY:0x7f2dfa65d460, pending SET-CFG: 0
+2023/11/12 22:56:59 PATH: [XHQ08-NHTQX] new pcc_idx (0)
+2023/11/12 22:56:59 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:56:59 PATH: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:59 PATH: [G6NKK-8C6DV] end_config: VTY:0x7f884c0990c0, pending SET-CFG: 0
+2023/11/12 22:56:59 ZEBRA: [V98V0-MTWPF] client 60 says hello and bids fair to announce only isis routes vrf=0
+2023/11/12 22:56:59 ZEBRA: [TAFZ7-2C7QV] client protocol instance 1
+2023/11/12 22:56:59 ISIS: [VTVCM-Y2NW3] Configuration Read in Took: 00:00:00
+2023/11/12 22:56:59 ISIS: [G6NKK-8C6DV] end_config: VTY:0x7fa3dda95670, pending SET-CFG: 0
+2023/11/12 22:57:00 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:57:00 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:57:03 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:57:03 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:57:09 PATH: [ZT69M-EDPC8] multi-pce: calculate all : i (0) is_best (0) previous_best (0)   
+2023/11/12 22:57:09 PATH: [VG6PJ-E1ERD] multi-pce: calculate data : sb (-1) sp (-1) oc (-1) b (-1)  
+2023/11/12 22:57:10 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:57:10 PATH: [V7V8Q-YHTPM][EC 285212680] skipping connection to PCE 172.20.0.3:4189 due to missing PCC IPv6 address
+2023/11/12 22:57:18 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:57:18 PATH: [RCHMJ-86GPX][EC 285212680] missing IPv6 PCC address, IPv6 candidate paths will be ignored
+2023/11/12 22:57:18 PATH: [ZT69M-EDPC8] multi-pce: calculate all : i (0) is_best (0) previous_best (0)   
+2023/11/12 22:57:18 PATH: [VG6PJ-E1ERD] multi-pce: calculate data : sb (-1) sp (-1) oc (0) b (0)  
+2023/11/12 22:57:18 PATH: [RHH05-AQA87] multi-pce: best pce (1) 
+2023/11/12 22:57:18 PATH: [NVNJP-RG8TJ] found id (1) pcc_idx (0)
+2023/11/12 22:57:30 BGP: [M59KS-A3ZXZ] bgp_update_receive: rcvd End-of-RIB for IPv4 Unicast from 172.21.0.2 in vrf default
