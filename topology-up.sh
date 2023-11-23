@@ -47,6 +47,7 @@ docker network create -d macvlan --subnet=172.18.1.1/29 --gateway=172.18.1.1 -o 
 docker network create -d macvlan --subnet=172.18.3.1/29 --gateway=172.18.3.1 -o parent=mv-top-end  			mv-top-end
 docker network create -d macvlan --subnet=172.18.5.1/29 --gateway=172.18.5.1 -o parent=mv-bottom-end 			mv-bottom-end 
 docker network create -d bridge  --subnet=172.20.0.1/29 --gateway=172.20.0.1 -o com.docker.network.bridge.name=br-odl	br-odl
+docker network create -d bridge  --subnet=172.19.0.1/29 --gateway=172.19.0.1 -o com.docker.network.bridge.name=br-main	br-main
 
 # containers
 docker run --name main --hostname main --cap-add NET_ADMIN --cap-add SYS_ADMIN \
@@ -74,16 +75,22 @@ docker run --name bottom --hostname bottom --cap-add NET_ADMIN --cap-add SYS_ADM
 -v ./vol/bottom/conf:/etc/frr \
 --privileged -d -it quay.io/frrouting/frr:9.0.1
 
+docker run --name main-peer --hostname main-peer --cap-add NET_ADMIN --cap-add SYS_ADMIN \
+-v ./vol/main-peer/frr.log:/frr.log \
+-v ./vol/main-peer/conf:/etc/frr \
+--privileged -d -it quay.io/frrouting/frr:9.0.1 
+
 docker run --name odl --hostname odl \
 -v ./vol/odl/entrypoint.sh:/entrypoint.sh \
 --entrypoint /entrypoint.sh -d -it opendaylight/odl
 
 # disconnect container from default network
-docker network disconnect bridge `docker ps -aqf "name=main"`
-docker network disconnect bridge `docker ps -aqf "name=start"`
-docker network disconnect bridge `docker ps -aqf "name=top"`
-docker network disconnect bridge `docker ps -aqf "name=end"`
-docker network disconnect bridge `docker ps -aqf "name=bottom"`
+docker network disconnect bridge `docker ps -aqf "name=main$"`
+docker network disconnect bridge `docker ps -aqf "name=start$"`
+docker network disconnect bridge `docker ps -aqf "name=top$"`
+docker network disconnect bridge `docker ps -aqf "name=end$"`
+docker network disconnect bridge `docker ps -aqf "name=bottom$"`
+docker network disconnect bridge `docker ps -aqf "name=main-peer$"`
 
 # connect to containers to network
 docker network connect mv-main-start main
@@ -102,6 +109,9 @@ docker network connect mv-bottom-end end
 docker network connect --ip 172.20.0.3 br-odl odl
 docker network connect --ip 172.20.0.2 br-odl start
 docker network connect --ip 172.20.0.4 br-odl end
+
+docker network connect --ip 172.19.0.2 br-main main
+docker network connect --ip 172.19.0.3 br-main main-peer
 
 # enable mpls inside containers
 docker exec main   sysctl -w net.mpls.conf.lo.input=1
