@@ -7,12 +7,6 @@ import (
 )
 
 func ParseMessage(data []byte) (messages.Message, error) {
-	// Check BGP marker
-	bgpMarker := [16]byte{0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff}
-	if !equalSlices(data[:16], bgpMarker[:]) {
-		return nil, errors.New("invalid BGP marker")
-	}
-
 	// Check BGP message type
 	messageTypeOffset := 18
 	messageType := data[messageTypeOffset]
@@ -27,21 +21,11 @@ func ParseMessage(data []byte) (messages.Message, error) {
 		message, err := messages.NewKeepAliveMessage(data)
 		log.Printf("KeepAlive message: %s\n", message)
 		return message, err
+	case messages.UpdateMessageType:
+		message, err := messages.NewUpdateMessage(data)
+		log.Printf("Update message: %s\n", message)
+		return message, err
 	default:
 		return nil, errors.New("unknown BGP message type")
 	}
-}
-
-func equalSlices(a, b []byte) bool {
-	if len(a) != len(b) {
-		return false
-	}
-
-	for i, _ := range a {
-		if a[i] != b[i] {
-			return false
-		}
-	}
-
-	return true
 }

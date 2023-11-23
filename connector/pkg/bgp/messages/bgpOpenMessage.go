@@ -40,14 +40,14 @@ func NewOpenMessage(data []byte) (*OpenMessage, error) {
 
 	for i := 0; i < len(optionalParametersBytes); {
 		parameterType := optionalParametersBytes[i]
+		parameterLength := optionalParametersBytes[i+1]
+		parameterValue := optionalParametersBytes[i+2 : i+2+int(parameterLength)]
 
 		if parameterType != 2 {
 			log.Printf("Parameter type: %d\n met. Not expecting. Expecting 2 (Capability)", parameterType)
+			i += 2 + int(parameterLength)
 			continue
 		}
-
-		parameterLength := optionalParametersBytes[i+1]
-		parameterValue := optionalParametersBytes[i+2 : i+2+int(parameterLength)]
 
 		// Parse only FQDN capability
 		capabilityCode := parameterValue[0]

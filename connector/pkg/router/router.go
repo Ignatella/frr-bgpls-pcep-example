@@ -2,16 +2,15 @@ package router
 
 import (
 	"bufio"
+	"bytes"
+	"connector/internal/filereader"
+	"connector/internal/printer"
 	"connector/pkg/bgp"
 	"connector/pkg/bgp/messages"
-	"connector/pkg/printer"
 	"encoding/hex"
 	"fmt"
 	"log"
 	"net"
-	"os"
-	"path/filepath"
-	"regexp"
 	"strings"
 )
 
@@ -62,18 +61,20 @@ func (server *Server) Run() {
 	}
 }
 
+const bgpMarker = "ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff"
+
 func (client *Client) handleRequest() {
 	log.Printf("New connection from %s", client.conn.RemoteAddr().String())
-
-	reader := bufio.NewReader(client.conn)
-	// create byte buffer
-	buffer := make([]byte, 1024)
 
 	defer func(conn net.Conn) {
 		_ = conn.Close()
 	}(client.conn)
 
+	reader := bufio.NewReader(client.conn)
+	buffer := make([]byte, 1024)
+
 	for {
+		// read from connection
 		n, err := reader.Read(buffer)
 		if err != nil {
 			log.Printf("Error reading from %s: %s", client.conn.RemoteAddr().String(), err)
@@ -84,82 +85,68 @@ func (client *Client) handleRequest() {
 		log.Println("Bytes incoming: ")
 		printer.Hexdump(buffer[:n])
 
-		// parse message
-		message, err := bgp.ParseMessage(buffer[:n])
-		if err != nil {
-			log.Printf("Error parsing BGP message: %s", err)
-			return
-		}
+		bgpMarker, _ := hex.DecodeString(strings.Replace(bgpMarker, " ", "", -1))
 
-		// prepare message
-		if _, ok := message.(*messages.OpenMessage); ok {
-			// read file
-			assetPath := filepath.Join("assets", "bgpOpenMessage.txt")
+		for i := 0; i < len(buffer[:n]); {
+			if !bytes.Equal(buffer[i:i+16], bgpMarker) {
+				log.Printf("Invalid BGP marker met\n")
+				break
+			}
 
-			content, err := os.ReadFile(assetPath)
+			messageLengthBytes := buffer[i+16 : i+18]
+			messageLength := int(uint16(messageLengthBytes[0])<<8 | uint16(messageLengthBytes[1]))
+
+			printer.Hexdump(buffer[i : i+messageLength])
+
+			// parse message
+			message, err := bgp.ParseMessage(buffer[i : i+messageLength])
 			if err != nil {
-				fmt.Println("Error reading binary file:", err)
+				log.Printf("Error parsing BGP message: %s", err)
 				return
 			}
 
-			re := regexp.MustCompile(`(?mU)^[0-9a-fA-F]+:(.+)(//.+)?$`)
-
-			// Find all matches in the input
-			matches := re.FindAllStringSubmatch(string(content), -1)
-
-			var messageBytes []byte
-
-			for _, match := range matches {
-				byteString := strings.ReplaceAll(match[1], " ", "")
-				bytes, err := hex.DecodeString(byteString)
+			// prepare response message
+			if _, ok := message.(*messages.OpenMessage); ok {
+				messageBytes, err := filereader.ReadMessage("bgpOpenMessage.txt")
 				if err != nil {
-					fmt.Println("Error decoding hex string:", err)
+					log.Printf("Error reading message file: %s", err)
 					return
 				}
-				messageBytes = append(messageBytes, bytes...)
 
-			}
-
-			_, err = client.conn.Write(messageBytes)
-			if err != nil {
-				log.Printf("Error writing to %s: %s", client.conn.RemoteAddr().String(), err)
-				return
-			}
-		}
-
-		if _, ok := message.(*messages.KeepAliveMessage); ok {
-			// read file
-			assetPath := filepath.Join("assets", "bgpKeepAliveMessage.txt")
-
-			content, err := os.ReadFile(assetPath)
-			if err != nil {
-				fmt.Println("Error reading binary file:", err)
-				return
-			}
-
-			re := regexp.MustCompile(`(?mU)^[0-9a-fA-F]+:(.+)(//.+)?$`)
-
-			// Find all matches in the input
-			matches := re.FindAllStringSubmatch(string(content), -1)
-
-			var messageBytes []byte
-
-			for _, match := range matches {
-				byteString := strings.ReplaceAll(match[1], " ", "")
-				bytes, err := hex.DecodeString(byteString)
+				_, err = client.conn.Write(messageBytes)
 				if err != nil {
-					fmt.Println("Error decoding hex string:", err)
+					log.Printf("Error writing to %s: %s", client.conn.RemoteAddr().String(), err)
 					return
 				}
-				messageBytes = append(messageBytes, bytes...)
+			}
+			if _, ok := message.(*messages.KeepAliveMessage); ok {
+				messageBytes, err := filereader.ReadMessage("bgpKeepAliveMessage.txt")
+				if err != nil {
+					log.Printf("Error reading message file: %s", err)
+					return
+				}
 
+				_, err = client.conn.Write(messageBytes)
+				if err != nil {
+					log.Printf("Error writing to %s: %s", client.conn.RemoteAddr().String(), err)
+					return
+				}
+			}
+			if _, ok := message.(*messages.UpdateMessage); ok {
+				messageBytes, err := filereader.ReadMessage("bgpEmptyUpdate.txt")
+				if err != nil {
+					log.Printf("Error reading message file: %s", err)
+					return
+				}
+
+				_, err = client.conn.Write(messageBytes)
+				if err != nil {
+					log.Printf("Error writing to %s: %s", client.conn.RemoteAddr().String(), err)
+					return
+				}
 			}
 
-			_, err = client.conn.Write(messageBytes)
-			if err != nil {
-				log.Printf("Error writing to %s: %s", client.conn.RemoteAddr().String(), err)
-				return
-			}
+			i += messageLength
 		}
 	}
 }
