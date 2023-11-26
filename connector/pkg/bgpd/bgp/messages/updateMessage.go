@@ -9,9 +9,8 @@ import (
 const UpdateMessageType = 2
 
 type UpdateMessage struct {
-	Type         uint8
-	Prefix       net.IP
-	PrefixLength uint8
+	Type   uint8
+	Prefix net.IPNet
 }
 
 func NewUpdateMessage(data []byte) (*UpdateMessage, error) {
@@ -21,7 +20,6 @@ func NewUpdateMessage(data []byte) (*UpdateMessage, error) {
 	pathAttributeLengthOffset := 21
 	pathAttributeLengthBytes := data[pathAttributeLengthOffset : pathAttributeLengthOffset+2]
 	pathAttributeLength := uint16(pathAttributeLengthBytes[0])<<8 | uint16(pathAttributeLengthBytes[1])
-	log.Printf("Path attribute length: %d\n", pathAttributeLength)
 
 	nlriOffset := pathAttributeLengthOffset + 2 + int(pathAttributeLength)
 	prefixLength := data[nlriOffset]
@@ -29,9 +27,15 @@ func NewUpdateMessage(data []byte) (*UpdateMessage, error) {
 
 	log.Printf("Prefix: %s/%d\n", prefix, prefixLength)
 
-	return &UpdateMessage{Type: UpdateMessageType, Prefix: prefix, PrefixLength: prefixLength}, nil
+	return &UpdateMessage{
+		Type: UpdateMessageType,
+		Prefix: net.IPNet{
+			IP:   prefix,
+			Mask: net.CIDRMask(int(prefixLength), 32),
+		},
+	}, nil
 }
 
 func (m *UpdateMessage) String() string {
-	return fmt.Sprintf("UpdateMessage{Type: %d, Prefix: %s/%d}", m.Type, m.Prefix, m.PrefixLength)
+	return fmt.Sprintf("UpdateMessage{Type: %d, Prefix: %s}", m.Type, m.Prefix)
 }

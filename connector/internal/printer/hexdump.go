@@ -1,30 +1,38 @@
 package printer
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 func Hexdump(bytes []byte) {
+
+	dump := "\n"
+
 	// 2 columns of 16 bytes
 	const bytesPerLine = 16
 
 	for i, b := range bytes {
 		// address
 		if i%bytesPerLine == 0 {
-			fmt.Printf("%08x: ", i)
+			dump += fmt.Sprintf("%08x: ", i)
 		}
 
 		// space between 2 columns
 		if i%8 == 0 {
-			fmt.Printf(" ")
+			dump += fmt.Sprintf(" ")
 		}
 
 		// print byte
-		fmt.Printf("%02x ", b)
+		dump += fmt.Sprintf("%02x ", b)
 
 		// new line
 		if i%bytesPerLine == bytesPerLine-1 {
-			fmt.Printf("\n")
+			dump += fmt.Sprintf("\n")
 		}
 	}
 
-	fmt.Printf("\n")
+	dump += fmt.Sprintf("\n")
+
+	log.Printf(dump)
 }

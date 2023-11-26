@@ -1,6 +1,7 @@
 package messages
 
 import (
+	"connector/pkg/bgpd/bgp/types"
 	"fmt"
 	"log"
 	"net"
@@ -12,7 +13,7 @@ type OpenMessage struct {
 	Type          uint8
 	AS            uint16
 	BGPIdentifier net.IP
-	Hostname      string
+	Capabilities  types.Capabilities
 }
 
 func NewOpenMessage(data []byte) (*OpenMessage, error) {
@@ -31,8 +32,8 @@ func NewOpenMessage(data []byte) (*OpenMessage, error) {
 	bpgIdentifier := net.IP(bgpIdentifierBytes)
 	log.Printf("BGP identifier: %s\n", bpgIdentifier)
 
-	// Hostname
-	hostname := ""
+	// Capabilities
+	capabilities := make(types.Capabilities, 0)
 
 	// Go through optional parameters
 	optionalParametersOffset := 29
@@ -49,21 +50,30 @@ func NewOpenMessage(data []byte) (*OpenMessage, error) {
 			continue
 		}
 
-		// Parse only FQDN capability
-		capabilityCode := parameterValue[0]
-		if capabilityCode == 73 {
-			hostnameLength := parameterValue[2]
-			hostname = string(parameterValue[3 : 3+int(hostnameLength)])
+		for j := 0; j < len(parameterValue); {
+			capabilityType := parameterValue[j]
+			capabilityLength := parameterValue[j+1]
+
+			capabilityBytes := parameterValue[j : j+2+int(capabilityLength)]
+
+			switch capabilityType {
+			case types.CapabilityHostname:
+				c := types.NewHostnameCapability(capabilityBytes)
+				capabilities = append(capabilities, c)
+			case types.CapabilityMultiprotocol:
+				c := types.NewMultiprotocolCapability(capabilityBytes)
+				capabilities = append(capabilities, c)
+			}
+
+			j += 2 + int(capabilityLength)
 		}
 
 		i += 2 + int(parameterLength)
 	}
 
-	log.Printf("Hostname: %s\n", hostname)
-
-	return &OpenMessage{Type: OpenMessageType, AS: asNumber, BGPIdentifier: bpgIdentifier, Hostname: hostname}, nil
+	return &OpenMessage{Type: OpenMessageType, AS: asNumber, BGPIdentifier: bpgIdentifier, Capabilities: capabilities}, nil
 }
 
 func (m *OpenMessage) String() string {
-	return fmt.Sprintf("OpenMessage{Type: %d, AS: %d, BGPIdentifier: %s, Hostname: %s}", m.Type, m.AS, m.BGPIdentifier, m.Hostname)
+	return fmt.Sprintf("OpenMessage{Type: %d, AS: %d, BGPIdentifier: %s, Capabilities: %s}", m.Type, m.AS, m.BGPIdentifier, m.Capabilities)
 }

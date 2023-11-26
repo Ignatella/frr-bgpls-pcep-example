@@ -11,10 +11,9 @@ type KeepAliveMessage struct {
 }
 
 func NewKeepAliveMessage(data []byte) (*KeepAliveMessage, error) {
-
 	return &KeepAliveMessage{Type: KeepAliveMessageType}, nil
 }
 
-func (m *KeepAliveMessage) String() string {
+func (m *NotificationMessage) String() string {
 	return fmt.Sprintf("KeepAliveMessage")
 }
