@@ -2,7 +2,7 @@ package messages
 
 import "fmt"
 
-const NotificationMessageType = 100
+const NotificationMessageType = 3
 
 type NotificationMessage struct {
 	Type uint8

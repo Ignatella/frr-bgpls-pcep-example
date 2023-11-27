@@ -26,7 +26,7 @@ func (router *Router) HandleRequest(eventCh chan types.BGPdEvent) {
 		n, err := reader.Read(buffer)
 		if err != nil {
 			log.Printf("Error reading from %s: %s", router.conn.RemoteAddr().String(), err)
-			close(router.running)
+			router.Exit()
 			return
 		}
 
@@ -62,35 +62,35 @@ func (router *Router) HandleRequest(eventCh chan types.BGPdEvent) {
 				router.BGPIdentifier = m.BGPIdentifier.String()
 				router.Capabilities = m.Capabilities
 
-				router.routerEventCh <- types.RouterEvent{
+				router.RouterEventCh <- types.RouterEvent{
 					Type: types.OpenMessageReceived,
 				}
 
 				eventCh <- types.BGPdEvent{
 					Type: types.NewRouter,
-					Data: *router.Copy(),
+					Data: router,
 				}
 			}
 			if _, ok := message.(*messages.KeepAliveMessage); ok {
-				router.routerEventCh <- types.RouterEvent{
+				router.RouterEventCh <- types.RouterEvent{
 					Type: types.KeepAliveMessageReceived,
 				}
 			}
 			if _, ok := message.(*messages.NotificationMessage); ok {
-				router.routerEventCh <- types.RouterEvent{
+				router.RouterEventCh <- types.RouterEvent{
 					Type: types.NotificationMessageReceived,
 				}
 			}
 			if m, ok := message.(*messages.UpdateMessage); ok {
 				router.AddPrefix(m.Prefix.String())
 
-				router.routerEventCh <- types.RouterEvent{
+				router.RouterEventCh <- types.RouterEvent{
 					Type: types.UpdateMessageReceived,
 				}
 
 				eventCh <- types.BGPdEvent{
 					Type: types.NewRouter,
-					Data: *router.Copy(),
+					Data: router,
 				}
 			}
 

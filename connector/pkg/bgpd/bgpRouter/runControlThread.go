@@ -3,6 +3,7 @@ package bgprouter
 import (
 	"connector/internal/filereader"
 	"connector/pkg/bgpd/bgp/types"
+	bgplsTypes "connector/pkg/bgpd/bgpls/types"
 	"log"
 )
 
@@ -17,7 +18,7 @@ func (router *Router) RunControlThread(bgpdEventCh chan types.BGPdEvent) {
 		select {
 		case <-router.running:
 			return
-		case event := <-router.routerEventCh:
+		case event := <-router.RouterEventCh:
 			switch event.Type {
 			case types.NewRouter:
 				router := event.Data.(Router)
@@ -28,8 +29,11 @@ func (router *Router) RunControlThread(bgpdEventCh chan types.BGPdEvent) {
 				router.writeMessageFromFile(keepAliveMessagePath)
 			case types.UpdateMessageReceived:
 				router.writeMessageFromFile(emptyUpdateMessagePath)
+			case types.SendBGPLSTopology:
+				nodeNlri := event.Data.([]bgplsTypes.NodeNLRI)
+				router.sendBGPLSTopology(nodeNlri)
 			case types.Quit, types.NotificationMessageReceived:
-				close(router.running)
+				router.Exit()
 				return
 			default:
 				log.Fatalf("Unknown event type: %d\n", event.Type)
@@ -41,13 +45,13 @@ func (router *Router) RunControlThread(bgpdEventCh chan types.BGPdEvent) {
 func (router *Router) writeMessageFromFile(path string) {
 	messageBytes, err := filereader.ReadMessage(path)
 	if err != nil {
-		close(router.running)
+		router.Exit()
 		return
 	}
 
 	_, err = router.conn.Write(messageBytes)
 	if err != nil {
-		close(router.running)
+		router.Exit()
 		return
 	}
 }

@@ -8,6 +8,6 @@ import (
 func StartDaemon(config *server.Config) {
 	eventCh := make(chan types.BGPdEvent)
 
-	server.StartBGPControlThread(eventCh)
+	server.NewBgpControlThread(eventCh).Run()
 	server.NewTCPServer(config).Run(eventCh)
 }

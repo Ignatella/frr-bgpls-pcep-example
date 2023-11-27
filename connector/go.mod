@@ -2,4 +2,4 @@ module connector
 
 go 1.19
 
-require github.com/golang-collections/collections v0.0.0-20130729185459-604e922904d3
+require golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa

@@ -13,6 +13,7 @@ const (
 	UpdateMessageReceived
 	KeepAliveMessageReceived
 	NotificationMessageReceived
+	SendBGPLSTopology
 	Quit
 )
 

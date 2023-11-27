@@ -1,15 +1,17 @@
 package bgprouter
 
 import (
+	"bytes"
 	"connector/pkg/bgpd/bgp/types"
 	"fmt"
 	"net"
 )
 
 type Router struct {
-	conn          net.Conn
-	routerEventCh chan types.RouterEvent
-	running       chan bool
+	conn    net.Conn
+	running chan bool
+
+	RouterEventCh chan types.RouterEvent
 
 	AS            uint16
 	BGPIdentifier string
@@ -20,7 +22,7 @@ type Router struct {
 func NewRouter(conn net.Conn) *Router {
 	return &Router{
 		conn:          conn,
-		routerEventCh: make(chan types.RouterEvent),
+		RouterEventCh: make(chan types.RouterEvent),
 		running:       make(chan bool),
 		Prefixes:      make([]string, 0),
 	}
@@ -45,14 +47,51 @@ func (router *Router) RemovePrefix(prefix string) {
 	}
 }
 
-func (router *Router) Copy() *Router {
-	dst := NewRouter(nil)
-	dst.AS = router.AS
-	dst.BGPIdentifier = router.BGPIdentifier
-	dst.Prefixes = append(dst.Prefixes, router.Prefixes...)
-	dst.Capabilities = append(dst.Capabilities, router.Capabilities...)
+func (router *Router) GetAdministrativePrefix() (string, bool) {
+	for _, prefix := range router.Prefixes {
+		_, ipnet, err := net.ParseCIDR(prefix)
 
-	return dst
+		if err != nil {
+			continue
+		}
+
+		if bytes.Equal(ipnet.Mask, net.CIDRMask(32, 32)) {
+			return prefix, true
+		}
+	}
+
+	return "", false
+}
+
+func (router *Router) HasMultiprotocolCapability(afi uint16, safi uint8) bool {
+	for _, capability := range router.Capabilities {
+		if c, ok := capability.(*types.MultiprotocolCapability); ok {
+			if c.AFI == afi && c.SAFI == safi {
+				return true
+			}
+		}
+	}
+
+	return false
+}
+
+func (router *Router) GetHostname() string {
+	for _, capability := range router.Capabilities {
+		if c, ok := capability.(*types.HostnameCapability); ok {
+			return c.Hostname
+		}
+	}
+
+	return ""
+}
+
+func (router *Router) Exit() {
+	select {
+	case <-router.running:
+		return
+	default:
+		close(router.running)
+	}
 }
 
 func (router *Router) String() string {

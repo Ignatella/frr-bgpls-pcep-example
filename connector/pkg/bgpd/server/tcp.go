@@ -2,7 +2,7 @@ package server
 
 import (
 	"connector/pkg/bgpd/bgp/types"
-	router2 "connector/pkg/bgpd/bgpRouter"
+	"connector/pkg/bgpd/bgpRouter"
 	"fmt"
 	"log"
 	"net"
@@ -47,7 +47,7 @@ func (server *Server) Run(bgpdEventCh chan types.BGPdEvent) {
 			log.Fatal(err)
 		}
 
-		router := router2.NewRouter(conn)
+		router := bgprouter.NewRouter(conn)
 
 		go router.RunControlThread(bgpdEventCh)
 		go router.HandleRequest(bgpdEventCh)
