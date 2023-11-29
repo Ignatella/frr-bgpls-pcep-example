@@ -1,4 +1,4 @@
-package types
+package events
 
 //  bgpd events
 
@@ -13,7 +13,9 @@ const (
 	UpdateMessageReceived
 	KeepAliveMessageReceived
 	NotificationMessageReceived
-	SendBGPLSTopology
+	SendBGPLSNodeNLRI
+	SendBGPLSPrefixNLRI
+	SendBGPLSLinkNLRI
 	Quit
 )
 

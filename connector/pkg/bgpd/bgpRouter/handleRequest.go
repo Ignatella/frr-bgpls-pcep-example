@@ -6,12 +6,12 @@ import (
 	"connector/internal/printer"
 	"connector/pkg/bgpd/bgp"
 	"connector/pkg/bgpd/bgp/messages"
-	"connector/pkg/bgpd/bgp/types"
+	"connector/pkg/bgpd/events"
 	"log"
 	"net"
 )
 
-func (router *Router) HandleRequest(eventCh chan types.BGPdEvent) {
+func (router *Router) HandleRequest(eventCh chan events.BGPdEvent) {
 	log.Printf("New connection from %s", router.conn.RemoteAddr().String())
 
 	defer func(conn net.Conn) {
@@ -62,34 +62,34 @@ func (router *Router) HandleRequest(eventCh chan types.BGPdEvent) {
 				router.BGPIdentifier = m.BGPIdentifier.String()
 				router.Capabilities = m.Capabilities
 
-				router.RouterEventCh <- types.RouterEvent{
-					Type: types.OpenMessageReceived,
+				router.RouterEventCh <- events.RouterEvent{
+					Type: events.OpenMessageReceived,
 				}
 
-				eventCh <- types.BGPdEvent{
-					Type: types.NewRouter,
+				eventCh <- events.BGPdEvent{
+					Type: events.NewRouter,
 					Data: router,
 				}
 			}
 			if _, ok := message.(*messages.KeepAliveMessage); ok {
-				router.RouterEventCh <- types.RouterEvent{
-					Type: types.KeepAliveMessageReceived,
+				router.RouterEventCh <- events.RouterEvent{
+					Type: events.KeepAliveMessageReceived,
 				}
 			}
 			if _, ok := message.(*messages.NotificationMessage); ok {
-				router.RouterEventCh <- types.RouterEvent{
-					Type: types.NotificationMessageReceived,
+				router.RouterEventCh <- events.RouterEvent{
+					Type: events.NotificationMessageReceived,
 				}
 			}
 			if m, ok := message.(*messages.UpdateMessage); ok {
 				router.AddPrefix(m.Prefix.String())
 
-				router.RouterEventCh <- types.RouterEvent{
-					Type: types.UpdateMessageReceived,
+				router.RouterEventCh <- events.RouterEvent{
+					Type: events.UpdateMessageReceived,
 				}
 
-				eventCh <- types.BGPdEvent{
-					Type: types.NewRouter,
+				eventCh <- events.BGPdEvent{
+					Type: events.NewRouter,
 					Data: router,
 				}
 			}

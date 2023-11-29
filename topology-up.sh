@@ -47,7 +47,7 @@ docker network create -d macvlan --subnet=172.18.1.1/29 --gateway=172.18.1.1 -o 
 docker network create -d macvlan --subnet=172.18.3.1/29 --gateway=172.18.3.1 -o parent=mv-top-end  			mv-top-end
 docker network create -d macvlan --subnet=172.18.5.1/29 --gateway=172.18.5.1 -o parent=mv-bottom-end 			mv-bottom-end 
 docker network create -d bridge  --subnet=172.20.0.1/29 --gateway=172.20.0.1 -o com.docker.network.bridge.name=br-odl	br-odl
-docker network create -d bridge  --subnet=172.19.0.1/29 --gateway=172.19.0.1 -o com.docker.network.bridge.name=br-main	br-main
+docker network create -d bridge  --subnet=172.19.0.0/23 --gateway=172.19.1.1 -o com.docker.network.bridge.name=br-main	br-main
 
 # containers
 docker run --name main --hostname main --cap-add NET_ADMIN --cap-add SYS_ADMIN \
@@ -68,7 +68,7 @@ docker run --name top --hostname top --cap-add NET_ADMIN --cap-add SYS_ADMIN \
 docker run --name end --hostname end --cap-add NET_ADMIN --cap-add SYS_ADMIN \
 -v ./vol/end/frr.log:/frr.log \
 -v ./vol/end/conf:/etc/frr \
---privileged -d -it quay.io/frrouting/frr:9.0.1
+--privileged -d -it frr:alpine-fa082128f9
 
 docker run --name bottom --hostname bottom --cap-add NET_ADMIN --cap-add SYS_ADMIN \
 -v ./vol/bottom/frr.log:/frr.log \
@@ -110,8 +110,12 @@ docker network connect --ip 172.20.0.3 br-odl odl
 docker network connect --ip 172.20.0.2 br-odl start
 docker network connect --ip 172.20.0.4 br-odl end
 
-docker network connect --ip 172.19.0.2 br-main main
-docker network connect --ip 172.19.0.3 br-main main-peer
+docker network connect --ip 172.19.0.1 br-main main
+docker network connect --ip 172.19.0.2 br-main start
+docker network connect --ip 172.19.0.3 br-main top
+docker network connect --ip 172.19.0.4 br-main end
+docker network connect --ip 172.19.0.5 br-main bottom
+docker network connect --ip 172.19.0.6 br-main main-peer
 
 # enable mpls inside containers
 docker exec main   sysctl -w net.mpls.conf.lo.input=1
@@ -152,3 +156,7 @@ docker exec start ifconfig lo0 172.191.2.1 netmask 255.255.255.0
 
 docker exec end	  ip link add lo0 type dummy
 docker exec end   ifconfig lo0 172.191.4.1 netmask 255.255.255.0 
+
+# add routes frr admin prefixes 
+docker exec --privileged odl ip route add 172.21.0.4/32 via 172.20.0.4
+docker exec --privileged odl ip route add 172.21.0.2/32 via 172.20.0.2

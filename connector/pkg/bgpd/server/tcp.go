@@ -1,8 +1,8 @@
 package server
 
 import (
-	"connector/pkg/bgpd/bgp/types"
 	"connector/pkg/bgpd/bgpRouter"
+	"connector/pkg/bgpd/events"
 	"fmt"
 	"log"
 	"net"
@@ -29,7 +29,7 @@ func NewTCPServer(config *Config) *Server {
 	}
 }
 
-func (server *Server) Run(bgpdEventCh chan types.BGPdEvent) {
+func (server *Server) Run(bgpdEventCh chan events.BGPdEvent) {
 	listener, err := net.Listen("tcp", fmt.Sprintf("%s:%s", server.host, server.port))
 	if err != nil {
 		log.Fatal(err)

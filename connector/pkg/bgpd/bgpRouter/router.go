@@ -3,6 +3,7 @@ package bgprouter
 import (
 	"bytes"
 	"connector/pkg/bgpd/bgp/types"
+	"connector/pkg/bgpd/events"
 	"fmt"
 	"net"
 )
@@ -11,7 +12,7 @@ type Router struct {
 	conn    net.Conn
 	running chan bool
 
-	RouterEventCh chan types.RouterEvent
+	RouterEventCh chan events.RouterEvent
 
 	AS            uint16
 	BGPIdentifier string
@@ -22,7 +23,7 @@ type Router struct {
 func NewRouter(conn net.Conn) *Router {
 	return &Router{
 		conn:          conn,
-		RouterEventCh: make(chan types.RouterEvent),
+		RouterEventCh: make(chan events.RouterEvent),
 		running:       make(chan bool),
 		Prefixes:      make([]string, 0),
 	}
