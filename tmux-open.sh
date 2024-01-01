@@ -25,10 +25,6 @@ window=5
 tmux new-window -t $session:$window -n 'bottom'
 tmux send-keys -t $session:$window "docker exec -it --privileged bottom $1" C-m
 
-window=6
-tmux new-window -t $session:$window -n 'main-peer'
-tmux send-keys -t $session:$window "docker exec -it --privileged main-peer $1" C-m
-
 tmux kill-window -t $session:0
 tmux select-window -t $session:1
 
