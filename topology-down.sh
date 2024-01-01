@@ -10,8 +10,9 @@ docker rm -f start
 docker rm -f top
 docker rm -f end
 docker rm -f bottom
+docker rm -f bgp-ls-connector
 docker rm -f odl
-docker rm -f main-peer
+docker rm -f pathman-sr
 
 docker network rm mv-main-start
 docker network rm mv-top-start

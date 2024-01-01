@@ -75,14 +75,17 @@ docker run --name bottom --hostname bottom --cap-add NET_ADMIN --cap-add SYS_ADM
 -v ./vol/bottom/conf:/etc/frr \
 --privileged -d -it quay.io/frrouting/frr:9.0.1
 
-docker run --name main-peer --hostname main-peer --cap-add NET_ADMIN --cap-add SYS_ADMIN \
--v ./vol/main-peer/frr.log:/frr.log \
--v ./vol/main-peer/conf:/etc/frr \
---privileged -d -it quay.io/frrouting/frr:9.0.1 
+docker run --name bgp-ls-connector \
+-d -it ignatella/bgp-ls-connector
 
 docker run --name odl --hostname odl \
+-v ./vol/odl/requests:/requests \
 -v ./vol/odl/entrypoint.sh:/entrypoint.sh \
 --entrypoint /entrypoint.sh -d -it opendaylight/odl
+
+docker run --name pathman-sr \
+-p 127.0.0.1:8020:8020 \
+-d -it ignatella/pathman-sr
 
 # disconnect container from default network
 docker network disconnect bridge `docker ps -aqf "name=main$"`
@@ -90,7 +93,7 @@ docker network disconnect bridge `docker ps -aqf "name=start$"`
 docker network disconnect bridge `docker ps -aqf "name=top$"`
 docker network disconnect bridge `docker ps -aqf "name=end$"`
 docker network disconnect bridge `docker ps -aqf "name=bottom$"`
-docker network disconnect bridge `docker ps -aqf "name=main-peer$"`
+docker network disconnect bridge `docker ps -aqf "name=bgp-ls-connector$"`
 
 # connect to containers to network
 docker network connect mv-main-start main
@@ -109,13 +112,15 @@ docker network connect mv-bottom-end end
 docker network connect --ip 172.20.0.3 br-odl odl
 docker network connect --ip 172.20.0.2 br-odl start
 docker network connect --ip 172.20.0.4 br-odl end
+docker network connect --ip 172.20.0.5 br-odl bgp-ls-connector
+docker network connect --ip 172.20.0.6 br-odl pathman-sr
 
 docker network connect --ip 172.19.0.1 br-main main
 docker network connect --ip 172.19.0.2 br-main start
 docker network connect --ip 172.19.0.3 br-main top
 docker network connect --ip 172.19.0.4 br-main end
 docker network connect --ip 172.19.0.5 br-main bottom
-docker network connect --ip 172.19.0.6 br-main main-peer
+docker network connect --ip 172.19.1.2 br-main bgp-ls-connector
 
 # enable mpls inside containers
 docker exec main   sysctl -w net.mpls.conf.lo.input=1
