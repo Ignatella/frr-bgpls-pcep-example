@@ -58,7 +58,7 @@ docker run --name main --hostname main --cap-add NET_ADMIN --cap-add SYS_ADMIN \
 docker run --name start --hostname start --cap-add NET_ADMIN --cap-add SYS_ADMIN \
 -v ./vol/start/frr.log:/frr.log \
 -v ./vol/start/conf:/etc/frr \
---privileged -d -it frr:alpine-fa082128f9
+--privileged -d -it ignatella/frr:alpine-fa082128f9-odl-compatible-pcep
 
 docker run --name top --hostname top --cap-add NET_ADMIN --cap-add SYS_ADMIN \
 -v ./vol/top/frr.log:/frr.log \
@@ -68,7 +68,7 @@ docker run --name top --hostname top --cap-add NET_ADMIN --cap-add SYS_ADMIN \
 docker run --name end --hostname end --cap-add NET_ADMIN --cap-add SYS_ADMIN \
 -v ./vol/end/frr.log:/frr.log \
 -v ./vol/end/conf:/etc/frr \
---privileged -d -it frr:alpine-fa082128f9
+--privileged -d -it ignatella/frr:alpine-fa082128f9-odl-compatible-pcep
 
 docker run --name bottom --hostname bottom --cap-add NET_ADMIN --cap-add SYS_ADMIN \
 -v ./vol/bottom/frr.log:/frr.log \
