@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# ensure script exits on error
+set -e
 
 # links
 sudo ip link add mv-main-start	 type dummy
@@ -50,27 +52,27 @@ docker network create -d bridge  --subnet=172.20.0.1/29 --gateway=172.20.0.1 -o 
 docker network create -d bridge  --subnet=172.19.0.0/23 --gateway=172.19.1.1 -o com.docker.network.bridge.name=br-main	br-main
 
 # containers
-docker run --name main --hostname main --cap-add NET_ADMIN --cap-add SYS_ADMIN \
+docker run --name main --hostname main \
 -v ./vol/main/frr.log:/frr.log \
 -v ./vol/main/conf:/etc/frr \
 --privileged -d -it quay.io/frrouting/frr:9.0.1 
 
-docker run --name start --hostname start --cap-add NET_ADMIN --cap-add SYS_ADMIN \
+docker run --name start --hostname start \
 -v ./vol/start/frr.log:/frr.log \
 -v ./vol/start/conf:/etc/frr \
 --privileged -d -it ignatella/frr:alpine-fa082128f9-odl-compatible-pcep
 
-docker run --name top --hostname top --cap-add NET_ADMIN --cap-add SYS_ADMIN \
+docker run --name top --hostname top \
 -v ./vol/top/frr.log:/frr.log \
 -v ./vol/top/conf:/etc/frr \
 --privileged -d -it quay.io/frrouting/frr:9.0.1
 
-docker run --name end --hostname end --cap-add NET_ADMIN --cap-add SYS_ADMIN \
+docker run --name end --hostname end \
 -v ./vol/end/frr.log:/frr.log \
 -v ./vol/end/conf:/etc/frr \
 --privileged -d -it ignatella/frr:alpine-fa082128f9-odl-compatible-pcep
 
-docker run --name bottom --hostname bottom --cap-add NET_ADMIN --cap-add SYS_ADMIN \
+docker run --name bottom --hostname bottom \
 -v ./vol/bottom/frr.log:/frr.log \
 -v ./vol/bottom/conf:/etc/frr \
 --privileged -d -it quay.io/frrouting/frr:9.0.1
