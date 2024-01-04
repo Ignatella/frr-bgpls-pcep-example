@@ -1,6 +1,9 @@
 #!/bin/bash
 
+set -e
+
 curl -k -X POST -sS \
+  -f \
   --header 'Authorization: Basic YWRtaW46YWRtaW4=' \
   --header 'Content-Type: application/json' \
   --data '{
@@ -46,7 +49,8 @@ curl -k -X POST -sS \
         }
     ]
 }' \
-   'http://172.20.0.3:8181/restconf/config/openconfig-network-instance:network-instances/network-instance/global-bgp/openconfig-network-instance:protocols/protocol/openconfig-policy-types:BGP/bgp-test/bgp/neighbors'
+   'http://172.20.0.3:8181/restconf/config/openconfig-network-instance:network-instances/network-instance/global-bgp/openconfig-network-instance:protocols/protocol/openconfig-policy-types:BGP/bgp-test/bgp/neighbors' \
+|| exit 1
 
 
 
