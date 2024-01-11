@@ -3,13 +3,11 @@ FROM golang:1.19
 # Set destination for COPY
 WORKDIR /connector
 
-# Download Go modules
-COPY go.mod go.sum ./
-RUN go mod download
-
 # Copy the source code. Note the slash at the end, as explained in
 # https://docs.docker.com/engine/reference/builder/#copy
 COPY . ./
+# Download Go modules
+RUN go mod download
 
 # Build
 WORKDIR cmd

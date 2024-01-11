@@ -1,6 +1,6 @@
 package events
 
-//  bgpd events
+// bgpd events
 
 const (
 	NewRouter = iota
