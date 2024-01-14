@@ -1,3 +1,4 @@
+// Package bgp contains types and logic of BGP protocol.
 package bgp
 
 import (
@@ -6,6 +7,7 @@ import (
 	"log"
 )
 
+// ParseMessage parses raw bytes into a new BGP message.
 func ParseMessage(data []byte) (messages.Message, error) {
 	messageTypeOffset := 18
 	messageType := data[messageTypeOffset]

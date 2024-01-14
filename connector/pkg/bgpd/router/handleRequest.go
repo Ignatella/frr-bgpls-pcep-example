@@ -1,4 +1,4 @@
-package bgprouter
+package router
 
 import (
 	"bufio"
@@ -11,6 +11,9 @@ import (
 	"net"
 )
 
+// HandleRequest handles a new connection from a BGP peer.
+// It reads the messages from the peer, parses and sends them
+// to the "Router Control Channel" and if needed to the "BGPd Control Thread".
 func (router *Router) HandleRequest(eventCh chan events.BGPdEvent) {
 	log.Printf("New connection from %s", router.conn.RemoteAddr().String())
 

@@ -6,13 +6,19 @@ import (
 	"net"
 )
 
+// UpdateMessageType is type of BGP Update message defined in [RFC 4271].
+//
+// [RFC 4271]: https://datatracker.ietf.org/doc/html/rfc4271#section-4.3
 const UpdateMessageType = 2
 
+// UpdateMessage is a message sent by a BGP speaker to update the routing information.
+// It contains information about the speaker's prefixes.
 type UpdateMessage struct {
 	Type   uint8
 	Prefix net.IPNet
 }
 
+// NewUpdateMessage parses raw bytes into a new UpdateMessage.
 func NewUpdateMessage(data []byte) (*UpdateMessage, error) {
 
 	log.Printf("Parsing update message")
@@ -36,6 +42,7 @@ func NewUpdateMessage(data []byte) (*UpdateMessage, error) {
 	}, nil
 }
 
+// String returns a string representation of the message.
 func (m *UpdateMessage) String() string {
 	return fmt.Sprintf("UpdateMessage{Type: %d, Prefix: %s}", m.Type, m.Prefix)
 }

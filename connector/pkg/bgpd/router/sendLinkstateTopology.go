@@ -1,4 +1,4 @@
-package bgprouter
+package router
 
 import (
 	"connector/internal/filereader"
@@ -8,6 +8,8 @@ import (
 	"net"
 )
 
+// sendBGPLSLinkNLRI sends BGP-LS Node NLRI to the BGP-LS peer.
+// It loads a template for a message from a file, fills it with the data and sends to the connection.
 func (router *Router) sendBGPLSLinkNLRI(linkNlris []bgplsTypes.LinkNLRI) error {
 	for _, nlri := range linkNlris {
 		messageBytes, err := filereader.ReadMessage("bgplsLinkNlri.txt")
@@ -75,6 +77,8 @@ func (router *Router) sendBGPLSLinkNLRI(linkNlris []bgplsTypes.LinkNLRI) error {
 	return nil
 }
 
+// sendBGPLSPrefixNLRI sends BGP-LS Prefix NLRI to the BGP-LS peer.
+// Similar to sendBGPLSLinkNLRI.
 func (router *Router) sendBGPLSPrefixNLRI(prefixNlris []bgplsTypes.PrefixNLRI) error {
 	for _, nlri := range prefixNlris {
 
@@ -119,6 +123,8 @@ func (router *Router) sendBGPLSPrefixNLRI(prefixNlris []bgplsTypes.PrefixNLRI) e
 	return nil
 }
 
+// sendBGPLSNodeNLRI sends BGP-LS Node NLRI to the BGP-LS peer.
+// Similar to sendBGPLSLinkNLRI.
 func (router *Router) sendBGPLSNodeNLRI(nodeNlris []bgplsTypes.NodeNLRI) error {
 
 	for _, nlri := range nodeNlris {

@@ -22,6 +22,26 @@ After path is deployed packets travel via `start` -> `top` -> `end` path:
 
 ![Path after SR tunnel is deployed](assets/path-after-sr-tunnel-is-deployed.png)
 
+## Usage
+
+To start the demo, first run:
+
+```bash
+./setup.sh
+```
+
+then run:
+
+```bash
+./topology-up.sh
+```
+
+To stop the demo, run:
+
+```bash
+./topology-down.sh
+```
+
 ## Actual topology
 
 ![Topology](assets/topology.png)

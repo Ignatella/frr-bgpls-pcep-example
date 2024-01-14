@@ -1,4 +1,4 @@
-package bgprouter
+package router
 
 import (
 	"connector/internal/filereader"
@@ -7,12 +7,14 @@ import (
 	"log"
 )
 
+// Message templates paths.
 const (
 	openMessagePath        = "bgpOpenMessage.txt"
 	keepAliveMessagePath   = "bgpKeepAliveMessage.txt"
 	emptyUpdateMessagePath = "bgpEmptyUpdate.txt"
 )
 
+// RunControlThread runs a control thread for the router and listens for the router events.
 func (router *Router) RunControlThread(bgpdEventCh chan events.BGPdEvent) {
 	for {
 		select {
@@ -61,6 +63,7 @@ func (router *Router) RunControlThread(bgpdEventCh chan events.BGPdEvent) {
 	}
 }
 
+// WriteMessageFromFile reads a message from a file and writes it to the connection.
 func (router *Router) writeMessageFromFile(path string) {
 	messageBytes, err := filereader.ReadMessage(path)
 	if err != nil {

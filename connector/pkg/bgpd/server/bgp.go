@@ -1,26 +1,34 @@
+// Package server contains logic of BGP Control Thread and TCP server.
 package server
 
 import (
 	bgpTypes "connector/pkg/bgpd/bgp/types"
-	"connector/pkg/bgpd/bgpRouter"
 	bgplsTypes "connector/pkg/bgpd/bgpls/types"
 	"connector/pkg/bgpd/events"
+	"connector/pkg/bgpd/router"
 	"log"
 	"net"
 )
 
+// BgpControlThread is responsible for entire daemon decision-making. The
+// thread stores all peers and decides when topology is complete and can
+// be advertised to BGP-LS peers.
 type BgpControlThread struct {
 	bgpdEventCh chan events.BGPdEvent
-	routers     map[string]*bgprouter.Router
+	routers     map[string]*router.Router
 }
 
+// NewBgpControlThread creates and initializes a new BGP control thread.
 func NewBgpControlThread(bgpdEventCh chan events.BGPdEvent) *BgpControlThread {
 	return &BgpControlThread{
 		bgpdEventCh: bgpdEventCh,
-		routers:     make(map[string]*bgprouter.Router),
+		routers:     make(map[string]*router.Router),
 	}
 }
 
+// Run listens for daemon events and handles them.
+// For example when a router is added (what means new peer is connected)
+// the Control Daemon saves peer information and checks if the topology is complete.
 func (th *BgpControlThread) Run() {
 	go func() {
 		for {
@@ -28,7 +36,7 @@ func (th *BgpControlThread) Run() {
 
 			switch event.Type {
 			case events.NewRouter:
-				router := event.Data.(*bgprouter.Router)
+				router := event.Data.(*router.Router)
 				th.routers[router.BGPIdentifier] = router
 				log.Printf("New router: %s\n", router)
 
@@ -59,6 +67,10 @@ func (th *BgpControlThread) Run() {
 	}()
 }
 
+// CalculateLinkstateNodeNLRI calculates information for Node NLRI for BGP-LS [RFC 9552].
+// Routers that advertise BGP-LS AFI/SAFI are not included in the result.
+//
+// [RFC 9552]: https://datatracker.ietf.org/doc/html/rfc9552#section-5.2.1
 func (th *BgpControlThread) CalculateLinkstateNodeNLRI() []bgplsTypes.NodeNLRI {
 
 	result := make([]bgplsTypes.NodeNLRI, 0)
@@ -75,6 +87,9 @@ func (th *BgpControlThread) CalculateLinkstateNodeNLRI() []bgplsTypes.NodeNLRI {
 	return result
 }
 
+// CalculateLinkstatePrefixNLRI calculates information for Prefix NLRI for BGP-LS [RFC 9552].
+//
+// [RFC 9552]: https://datatracker.ietf.org/doc/html/rfc9552#section-5.2.3
 func (th *BgpControlThread) CalculateLinkstatePrefixNLRI() []bgplsTypes.PrefixNLRI {
 	result := make([]bgplsTypes.PrefixNLRI, 0)
 
@@ -85,6 +100,10 @@ func (th *BgpControlThread) CalculateLinkstatePrefixNLRI() []bgplsTypes.PrefixNL
 	return result
 }
 
+// CalculateLinkstateLinkNLRI calculates information for Link NLRI for BGP-LS [RFC 9552].
+// Routers that advertise BGP-LS AFI/SAFI are not included in the result.
+//
+// [RFC 9552]: https://datatracker.ietf.org/doc/html/rfc9552#section-5.2.2
 func (th *BgpControlThread) CalculateLinkstateLinkNLRI() []bgplsTypes.LinkNLRI {
 	linkNLRIs := make(map[string]bgplsTypes.LinkNLRI)
 
@@ -142,6 +161,8 @@ func (th *BgpControlThread) CalculateLinkstateLinkNLRI() []bgplsTypes.LinkNLRI {
 	return nlris
 }
 
+// isCompleteTopology checks if the topology is complete.
+// "Complete" means that for every existing link there are two nodes.
 func (th *BgpControlThread) isCompleteTopology() bool {
 
 	// number of nodes on links between routers

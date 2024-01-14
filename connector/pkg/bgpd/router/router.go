@@ -1,4 +1,5 @@
-package bgprouter
+// Package router contains types and logic of "Router" (BGP peer).
+package router
 
 import (
 	"bytes"
@@ -8,6 +9,7 @@ import (
 	"net"
 )
 
+// Router represents a BGP peer.
 type Router struct {
 	conn    net.Conn
 	running chan bool
@@ -20,6 +22,7 @@ type Router struct {
 	Capabilities  types.Capabilities
 }
 
+// NewRouter initializes a new Router.
 func NewRouter(conn net.Conn) *Router {
 	return &Router{
 		conn:          conn,
@@ -29,6 +32,7 @@ func NewRouter(conn net.Conn) *Router {
 	}
 }
 
+// AddPrefix adds an announced by the peer prefix to the router.
 func (router *Router) AddPrefix(prefix string) {
 	for _, p := range router.Prefixes {
 		if p == prefix {
@@ -39,6 +43,7 @@ func (router *Router) AddPrefix(prefix string) {
 	router.Prefixes = append(router.Prefixes, prefix)
 }
 
+// RemovePrefix removes a prefix from the router.
 func (router *Router) RemovePrefix(prefix string) {
 	for i, p := range router.Prefixes {
 		if p == prefix {
@@ -48,6 +53,7 @@ func (router *Router) RemovePrefix(prefix string) {
 	}
 }
 
+// GetAdministrativePrefix returns the administrative prefix of the router.
 func (router *Router) GetAdministrativePrefix() (string, bool) {
 	for _, prefix := range router.Prefixes {
 		_, ipnet, err := net.ParseCIDR(prefix)
@@ -64,6 +70,7 @@ func (router *Router) GetAdministrativePrefix() (string, bool) {
 	return "", false
 }
 
+// HasMultiprotocolCapability checks if the router has a multiprotocol capability.
 func (router *Router) HasMultiprotocolCapability(afi uint16, safi uint8) bool {
 	for _, capability := range router.Capabilities {
 		if c, ok := capability.(*types.MultiprotocolCapability); ok {
@@ -76,6 +83,7 @@ func (router *Router) HasMultiprotocolCapability(afi uint16, safi uint8) bool {
 	return false
 }
 
+// GetHostname returns the hostname of the router.
 func (router *Router) GetHostname() string {
 	for _, capability := range router.Capabilities {
 		if c, ok := capability.(*types.HostnameCapability); ok {
@@ -86,6 +94,7 @@ func (router *Router) GetHostname() string {
 	return ""
 }
 
+// Exit closes the running channel effectively stopping the router and breaking connection with the peer.
 func (router *Router) Exit() {
 	select {
 	case <-router.running:
@@ -95,6 +104,7 @@ func (router *Router) Exit() {
 	}
 }
 
+// String returns a string representation of the router.
 func (router *Router) String() string {
 	return fmt.Sprintf("Received Router{AS: %d, BGPIdentifier: %s, Prefixes: %v, Capabilities: %v}", router.AS, router.BGPIdentifier, router.Prefixes, router.Capabilities)
 }

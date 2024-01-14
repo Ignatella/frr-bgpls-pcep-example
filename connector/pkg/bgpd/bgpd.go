@@ -1,3 +1,4 @@
+// Package bgpd implements the BGP daemon.
 package bgpd
 
 import (
@@ -5,6 +6,7 @@ import (
 	"connector/pkg/bgpd/server"
 )
 
+// StartDaemon starts the BGP daemon.
 func StartDaemon(config *server.Config) {
 	eventCh := make(chan events.BGPdEvent)
 

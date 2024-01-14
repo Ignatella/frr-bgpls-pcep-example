@@ -7,8 +7,13 @@ import (
 	"net"
 )
 
+// OpenMessageType is type of BGP Open message defined in [RFC 4271].
+//
+// [RFC 4271]: https://datatracker.ietf.org/doc/html/rfc4271#section-4.2
 const OpenMessageType = 1
 
+// OpenMessage is a message sent by a BGP speaker to establish a BGP connection.
+// It contains information about the speaker.
 type OpenMessage struct {
 	Type          uint8
 	AS            uint16
@@ -16,6 +21,7 @@ type OpenMessage struct {
 	Capabilities  types.Capabilities
 }
 
+// NewOpenMessage parses raw bytes into a new OpenMessage.
 func NewOpenMessage(data []byte) (*OpenMessage, error) {
 
 	log.Printf("Parsing open message")
@@ -74,6 +80,7 @@ func NewOpenMessage(data []byte) (*OpenMessage, error) {
 	return &OpenMessage{Type: OpenMessageType, AS: asNumber, BGPIdentifier: bpgIdentifier, Capabilities: capabilities}, nil
 }
 
+// String returns a string representation of the message.
 func (m *OpenMessage) String() string {
 	return fmt.Sprintf("OpenMessage{Type: %d, AS: %d, BGPIdentifier: %s, Capabilities: %s}", m.Type, m.AS, m.BGPIdentifier, m.Capabilities)
 }
